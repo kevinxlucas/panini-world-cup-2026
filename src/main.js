@@ -22,8 +22,7 @@ let toastTimer;
 
 const navItems = [
   ['home', 'Home', '⌂'],
-  ['country', 'País', '▦'],
-  ['specials', 'Brilhantes', '✦'],
+  ['country', 'Secção', '▦'],
   ['coca', 'Coca-Cola', '●'],
   ['stats', 'Estatísticas', '◎'],
 ];
@@ -61,7 +60,6 @@ function render() {
       <section class="screen" aria-live="polite">
         ${view === 'home' ? renderHome(sections) : ''}
         ${view === 'country' ? renderCountry(selectedSection) : ''}
-        ${view === 'specials' ? renderSpecials(sections) : ''}
         ${view === 'coca' ? renderCocaCola() : ''}
         ${view === 'stats' ? renderStats(sections) : ''}
       </section>
@@ -86,7 +84,7 @@ function renderHeader() {
           <small>${stats.ownedCards}/${stats.totalCards} cartas</small>
         </article>
         <article class="glass"><span>Em falta</span><strong>${stats.totalCards - stats.ownedCards}</strong><small>total</small></article>
-        <article class="glass"><span>Brilhantes</span><strong>${stats.missingSpecialCount}</strong><small>em falta</small></article>
+        <article class="glass"><span>Douradas</span><strong>${stats.missingSpecialCount}</strong><small>em falta</small></article>
         <article class="glass"><span>Coca-Cola</span><strong>${stats.missingCocaColaCount}</strong><small>em falta</small></article>
       </div>
     </header>
@@ -98,14 +96,14 @@ function renderHome(sections) {
   return `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Ordem da caderneta</p>
-        <h2>Países / secções</h2>
+        <p class="eyebrow">Ordem oficial da caderneta</p>
+        <h2>FWC + países</h2>
       </div>
       <button class="pill" data-action="toggle-editor">Editar ordem</button>
     </div>
     <article class="notice">
-      <strong>Ordem oficial ainda editável.</strong>
-      <span>O ficheiro <code>src/albumData.js</code> mantém a estrutura separada da lógica. Na app, podes renomear/reordenar os 48 lugares e exportar o backup JSON.</span>
+      <strong>Checklist oficial carregada e ainda editável.</strong>
+      <span>A app usa a secção <code>FWC</code> antes das seleções e os 48 nomes/grafias da checklist Panini 2026. As douradas aparecem no início de cada conjunto; podes exportar o backup JSON.</span>
     </article>
     <section class="country-list">
       ${sections.map(renderCountryCard).join('')}
@@ -113,7 +111,7 @@ function renderHome(sections) {
     <section class="editor hidden" data-editor>
       <div class="section-title compact">
         <div>
-          <p class="eyebrow">Editor simples</p>
+            <p class="eyebrow">Editor simples</p>
           <h2>Corrigir nomes e ordem</h2>
         </div>
         <button class="pill secondary" data-action="reset-overrides">Repor</button>
@@ -145,7 +143,7 @@ function renderCountryCard(section) {
       <span class="order">${String(section.order).padStart(2, '0')}</span>
       <span class="country-info">
         <strong>${escapeHtml(section.name)}</strong>
-        <small>${progress.ownedCount}/${progress.total} completas · ${progress.missingSpecial.length} brilhantes em falta</small>
+        <small>${progress.ownedCount}/${progress.total} completas · ${progress.missingSpecial.length} dourada${progress.missingSpecial.length === 1 ? '' : 's'} em falta</small>
       </span>
       <span class="ring" style="background:${gradient}"><em>${progress.percent}%</em></span>
     </button>
@@ -160,10 +158,10 @@ function renderCountry(section) {
   return `
     <div class="section-title">
       <div>
-        <p class="eyebrow">País / secção ${String(section.order).padStart(2, '0')}</p>
+        <p class="eyebrow">Secção ${String(section.order).padStart(2, '0')}</p>
         <h2>${escapeHtml(section.name)}</h2>
       </div>
-      <select class="select" data-action="select-country" aria-label="Escolher país">
+      <select class="select" data-action="select-country" aria-label="Escolher secção">
         ${applySectionOverrides(albumStructure, collection).map((item) => `<option value="${item.id}" ${item.id === section.id ? 'selected' : ''}>${String(item.order).padStart(2, '0')} · ${escapeHtml(item.name)}</option>`).join('')}
       </select>
     </div>
@@ -174,8 +172,8 @@ function renderCountry(section) {
       </div>
       <div class="progress-bar"><span style="width:${progress.percent}%"></span></div>
     </article>
+    ${renderCardGroup('Douradas/especiais em falta', progress.missingSpecial, section.id, 'missing special')}
     ${renderCardGroup('Cartas em falta', progress.missingNormal, section.id, 'missing')}
-    ${renderCardGroup('Brilhantes/especiais em falta', progress.missingSpecial, section.id, 'missing special')}
     ${renderCardGroup('Já tenho · toca para voltar a marcar em falta', ownedCards, section.id, 'owned')}
   `;
 }
@@ -191,30 +189,12 @@ function renderCardGroup(title, cards, sectionId, variant) {
 
 function renderSticker(card, sectionId, variant) {
   const special = card.kind !== 'normal';
+  const label = card.label || (special ? 'especial' : 'falta');
   return `
-    <button class="sticker ${special ? 'special' : ''} ${variant.includes('owned') ? 'owned' : ''}" data-action="toggle-card" data-section-id="${sectionId}" data-card-number="${card.number}">
+    <button class="sticker ${special ? 'special' : ''} ${variant.includes('owned') ? 'owned' : ''}" data-action="toggle-card" data-section-id="${sectionId}" data-card-number="${card.number}" title="${escapeHtml(label)}">
       <span>${escapeHtml(card.number)}</span>
-      <small>${variant.includes('owned') ? 'tenho' : special ? 'especial' : 'falta'}</small>
+      <small>${escapeHtml(label)}</small>
     </button>
-  `;
-}
-
-function renderSpecials(sections) {
-  const rows = sections
-    .map((section) => ({ section, progress: getSectionProgress(section, collection) }))
-    .filter(({ progress }) => progress.missingSpecial.length || section.cards.some((card) => card.kind !== 'normal'));
-  return `
-    <div class="section-title"><div><p class="eyebrow">Visão rápida</p><h2>Brilhantes / especiais</h2></div></div>
-    <article class="notice">Toca numa brilhante em falta para a marcar como “já tenho”.</article>
-    ${rows.map(({ section, progress }) => `
-      <section class="card-section grouped">
-        <div class="section-title compact">
-          <button class="link-title" data-action="open-country" data-section-id="${section.id}">${String(section.order).padStart(2, '0')} · ${escapeHtml(section.name)}</button>
-          <span>${progress.missingSpecial.length} em falta</span>
-        </div>
-        ${progress.missingSpecial.length ? `<div class="sticker-grid small">${progress.missingSpecial.map((card) => renderSticker(card, section.id, 'missing special')).join('')}</div>` : '<p class="empty">Brilhantes completas.</p>'}
-      </section>
-    `).join('')}
   `;
 }
 
@@ -261,7 +241,7 @@ function renderStats(sections) {
     <section class="stats-grid">
       <article><span>Total em falta</span><strong>${stats.totalCards - stats.ownedCards}</strong></article>
       <article><span>Cartas normais em falta</span><strong>${stats.missingNormalCount}</strong></article>
-      <article><span>Brilhantes em falta</span><strong>${stats.missingSpecialCount}</strong></article>
+      <article><span>Douradas/especiais em falta</span><strong>${stats.missingSpecialCount}</strong></article>
       <article><span>Coca-Cola em falta</span><strong>${stats.missingCocaColaCount}</strong></article>
       <article class="wide"><span>Percentagem da caderneta completa</span><strong>${stats.completionPercent}%</strong></article>
     </section>

@@ -4,19 +4,20 @@ Primeira versão funcional de uma app mobile-first para gerir a caderneta Panini
 
 ## Funcionalidades
 
-- Home com 48 países/secções preparados para a caderneta física.
-- Página de país com cartas normais em falta, brilhantes/especiais em falta e progresso.
+- Home com a secção `FWC` antes das 48 seleções, na ordem da checklist Panini FIFA World Cup 2026.
+- Nomes das seleções carregados com a grafia da checklist: por exemplo `Czechia`, `Türkiye`, `Curaçao`, `Congo DR` e `USA`.
+- Página de secção com douradas/especiais em primeiro lugar, cartas normais em falta e progresso.
 - Toque numa carta em falta para marcar como “já tenho”; toque numa carta já marcada para desfazer.
 - Secção Coca-Cola x Panini com 12 stickers especiais C1 a C12.
-- Estatísticas gerais: total em falta, brilhantes em falta, Coca-Cola em falta e percentagem completa.
+- Estatísticas gerais: total em falta, douradas/especiais em falta, Coca-Cola em falta e percentagem completa.
 - Persistência local no browser/telemóvel via `localStorage`.
 - Exportar/importar JSON para backup.
 - Estrutura da caderneta separada da lógica em `src/albumData.js`.
-- Editor simples na Home para corrigir nomes e ordem dos 48 países sem mexer no código.
+- Editor simples na Home para corrigir nomes e ordem localmente sem mexer no código.
 
 ## Nota sobre dados oficiais
 
-A ordem oficial da caderneta física Panini FIFA World Cup 2026 ainda fica marcada como editável nesta versão inicial (`officialPaniniOrderKnown: false`). Quando a ordem oficial estiver confirmada, atualiza `src/albumData.js` ou usa o editor da app e exporta o JSON.
+A estrutura base está marcada como confirmada (`officialPaniniOrderKnown: true`) e inclui 980 stickers de checklist base: `00` + `FWC1`-`FWC19`, mais 48 seleções com 20 stickers cada. A ordem e a grafia dos países foram cruzadas entre ChecklistInsider e Diamond Cards Online; os detalhes ficam registados em `sourceMetadata` dentro de `src/albumData.js`.
 
 ## Desenvolvimento
 

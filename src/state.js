@@ -21,6 +21,7 @@ export function createEmptyCollection(albumStructure) {
 export function normalizeCollection(value, albumStructure) {
   const fresh = createEmptyCollection(albumStructure);
   const imported = value && typeof value === 'object' ? value : {};
+  const sameAlbumSchema = Number(imported.sourceAlbumSchemaVersion) === Number(albumStructure.schemaVersion);
   const ownedBySection = imported.ownedBySection && typeof imported.ownedBySection === 'object'
     ? imported.ownedBySection
     : {};
@@ -39,7 +40,7 @@ export function normalizeCollection(value, albumStructure) {
     ),
     cocaColaOwned: [...new Set(Array.isArray(imported.cocaColaOwned) ? imported.cocaColaOwned.map(String) : [])]
       .filter((cardNumber) => albumStructure.cocaCola.cards.some((card) => card.number === cardNumber)),
-    sectionOverrides: mergeSectionOverrides(imported.sectionOverrides, albumStructure),
+    sectionOverrides: mergeSectionOverrides(sameAlbumSchema ? imported.sectionOverrides : undefined, albumStructure),
     updatedAt: imported.updatedAt || nowIso(),
   };
 }

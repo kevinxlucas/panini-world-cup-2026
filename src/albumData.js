@@ -1,5243 +1,5364 @@
 export const albumStructure = {
-  "schemaVersion": 1,
+  "schemaVersion": 4,
   "title": "Panini FIFA World Cup 2026",
-  "officialPaniniOrderKnown": false,
-  "editInstructions": "A ordem oficial da caderneta física Panini 2026 pode ser preenchida/corrigida alterando order/name neste ficheiro ou usando o editor simples da app e exportando JSON.",
+  "officialPaniniOrderKnown": true,
+  "editInstructions": "Estrutura carregada com a sequência FWC + seleções conforme checklist Panini FIFA World Cup 2026; os nomes devem manter a grafia oficial da checklist.",
+  "sourceMetadata": {
+    "primaryChecklist": "https://www.checklistinsider.com/2026-panini-fifa-world-cup-sticker/",
+    "crossCheckedWith": "https://www.diamondcardsonline.com/blog/2026-panini-fifa-world-cup-sticker-collection-checklist/",
+    "verifiedAgainst": [
+      "ChecklistInsider: ordem e nomes dos 48 Team Logo",
+      "Diamond Cards Online: os primeiros 48 Team Logo batem na mesma ordem e grafia"
+    ],
+    "officialBaseStickerCount": 980,
+    "notes": "A secção FWC fica antes das seleções. A checklist inclui 00 + FWC1-FWC19 e 48 seleções com 20 stickers cada."
+  },
   "countryCardTemplate": {
-    "normalPerCountry": 18,
-    "specialPerCountry": 2,
-    "totalPerCountry": 20
+    "normalPerCountry": 19,
+    "specialPerCountry": 1,
+    "totalPerCountry": 20,
+    "specialPosition": "first"
   },
   "countries": [
     {
-      "id": "country-01",
+      "id": "fwc",
       "order": 1,
-      "name": "País 01",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "FWC",
+      "name": "FWC",
+      "officialNameKnown": true,
+      "notes": "Secção de abertura: 00 + FWC1-FWC19, colocada antes das seleções.",
       "cards": [
         {
-          "number": "001",
-          "kind": "normal",
-          "label": "Carta 001"
+          "number": "00",
+          "kind": "golden-special",
+          "label": "Panini Logo"
         },
         {
-          "number": "002",
-          "kind": "normal",
-          "label": "Carta 002"
+          "number": "FWC1",
+          "kind": "golden-special",
+          "label": "Official Emblem"
         },
         {
-          "number": "003",
-          "kind": "normal",
-          "label": "Carta 003"
+          "number": "FWC2",
+          "kind": "golden-special",
+          "label": "Official Emblem"
         },
         {
-          "number": "004",
-          "kind": "normal",
-          "label": "Carta 004"
+          "number": "FWC3",
+          "kind": "golden-special",
+          "label": "Official Mascots"
         },
         {
-          "number": "005",
-          "kind": "normal",
-          "label": "Carta 005"
+          "number": "FWC4",
+          "kind": "golden-special",
+          "label": "Official Slogan"
         },
         {
-          "number": "006",
-          "kind": "normal",
-          "label": "Carta 006"
+          "number": "FWC5",
+          "kind": "golden-special",
+          "label": "Official Ball"
         },
         {
-          "number": "007",
-          "kind": "normal",
-          "label": "Carta 007"
+          "number": "FWC6",
+          "kind": "golden-special",
+          "label": "Canada - Host Countries & Cities"
         },
         {
-          "number": "008",
-          "kind": "normal",
-          "label": "Carta 008"
+          "number": "FWC7",
+          "kind": "golden-special",
+          "label": "Mexico - Host Countries & Cities"
         },
         {
-          "number": "009",
-          "kind": "normal",
-          "label": "Carta 009"
+          "number": "FWC8",
+          "kind": "golden-special",
+          "label": "USA - Host Countries & Cities"
         },
         {
-          "number": "010",
-          "kind": "normal",
-          "label": "Carta 010"
+          "number": "FWC9",
+          "kind": "golden-special",
+          "label": "Italy 1934 - FIFA Museum"
         },
         {
-          "number": "011",
-          "kind": "normal",
-          "label": "Carta 011"
+          "number": "FWC10",
+          "kind": "golden-special",
+          "label": "Uruguay 1950 - FIFA Museum"
         },
         {
-          "number": "012",
-          "kind": "normal",
-          "label": "Carta 012"
+          "number": "FWC11",
+          "kind": "golden-special",
+          "label": "West Germany 1954 - FIFA Museum"
         },
         {
-          "number": "013",
-          "kind": "normal",
-          "label": "Carta 013"
+          "number": "FWC12",
+          "kind": "golden-special",
+          "label": "Brazil 1962 - FIFA Museum"
         },
         {
-          "number": "014",
-          "kind": "normal",
-          "label": "Carta 014"
+          "number": "FWC13",
+          "kind": "golden-special",
+          "label": "West Germany 1974 - FIFA Museum"
         },
         {
-          "number": "015",
-          "kind": "normal",
-          "label": "Carta 015"
+          "number": "FWC14",
+          "kind": "golden-special",
+          "label": "Argentina 1986 - FIFA Museum"
         },
         {
-          "number": "016",
-          "kind": "normal",
-          "label": "Carta 016"
+          "number": "FWC15",
+          "kind": "golden-special",
+          "label": "Brazil 1994 - FIFA Museum"
         },
         {
-          "number": "017",
-          "kind": "normal",
-          "label": "Carta 017"
+          "number": "FWC16",
+          "kind": "golden-special",
+          "label": "Brazil 2002 - FIFA Museum"
         },
         {
-          "number": "018",
-          "kind": "normal",
-          "label": "Carta 018"
+          "number": "FWC17",
+          "kind": "golden-special",
+          "label": "Italy 2006 - FIFA Museum"
         },
         {
-          "number": "019",
-          "kind": "special",
-          "label": "Brilhante/Especial 019"
+          "number": "FWC18",
+          "kind": "golden-special",
+          "label": "Germany 2014 - FIFA Museum"
         },
         {
-          "number": "020",
-          "kind": "special",
-          "label": "Brilhante/Especial 020"
+          "number": "FWC19",
+          "kind": "golden-special",
+          "label": "Argentina 2022 - FIFA Museum"
         }
       ]
     },
     {
-      "id": "country-02",
+      "id": "mex",
       "order": 2,
-      "name": "País 02",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "MEX",
+      "name": "Mexico",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "021",
+          "number": "MEX1",
+          "kind": "golden-special",
+          "label": "Team Logo - Mexico"
+        },
+        {
+          "number": "MEX2",
           "kind": "normal",
-          "label": "Carta 021"
+          "label": "Luis Malagón - Mexico"
         },
         {
-          "number": "022",
+          "number": "MEX3",
           "kind": "normal",
-          "label": "Carta 022"
+          "label": "Johan Vasquez - Mexico"
         },
         {
-          "number": "023",
+          "number": "MEX4",
           "kind": "normal",
-          "label": "Carta 023"
+          "label": "Jorge Sánchez - Mexico"
         },
         {
-          "number": "024",
+          "number": "MEX5",
           "kind": "normal",
-          "label": "Carta 024"
+          "label": "Cesar Montes - Mexico"
         },
         {
-          "number": "025",
+          "number": "MEX6",
           "kind": "normal",
-          "label": "Carta 025"
+          "label": "Jesus Gallardo - Mexico"
         },
         {
-          "number": "026",
+          "number": "MEX7",
           "kind": "normal",
-          "label": "Carta 026"
+          "label": "Israel Reyes - Mexico"
         },
         {
-          "number": "027",
+          "number": "MEX8",
           "kind": "normal",
-          "label": "Carta 027"
+          "label": "Diego Lainez - Mexico"
         },
         {
-          "number": "028",
+          "number": "MEX9",
           "kind": "normal",
-          "label": "Carta 028"
+          "label": "Carlos Rodriguez - Mexico"
         },
         {
-          "number": "029",
+          "number": "MEX10",
           "kind": "normal",
-          "label": "Carta 029"
+          "label": "Edson Alvarez - Mexico"
         },
         {
-          "number": "030",
+          "number": "MEX11",
           "kind": "normal",
-          "label": "Carta 030"
+          "label": "Orbelin Pineda - Mexico"
         },
         {
-          "number": "031",
+          "number": "MEX12",
           "kind": "normal",
-          "label": "Carta 031"
+          "label": "Marcel Ruiz - Mexico"
         },
         {
-          "number": "032",
+          "number": "MEX13",
           "kind": "normal",
-          "label": "Carta 032"
+          "label": "Team Photo - Mexico"
         },
         {
-          "number": "033",
+          "number": "MEX14",
           "kind": "normal",
-          "label": "Carta 033"
+          "label": "Érick Sánchez - Mexico"
         },
         {
-          "number": "034",
+          "number": "MEX15",
           "kind": "normal",
-          "label": "Carta 034"
+          "label": "Hirving Lozano - Mexico"
         },
         {
-          "number": "035",
+          "number": "MEX16",
           "kind": "normal",
-          "label": "Carta 035"
+          "label": "Santiago Giménez - Mexico"
         },
         {
-          "number": "036",
+          "number": "MEX17",
           "kind": "normal",
-          "label": "Carta 036"
+          "label": "Raúl Jiménez - Mexico"
         },
         {
-          "number": "037",
+          "number": "MEX18",
           "kind": "normal",
-          "label": "Carta 037"
+          "label": "Alexis Vega - Mexico"
         },
         {
-          "number": "038",
+          "number": "MEX19",
           "kind": "normal",
-          "label": "Carta 038"
+          "label": "Roberto Alvarado - Mexico"
         },
         {
-          "number": "039",
-          "kind": "special",
-          "label": "Brilhante/Especial 039"
-        },
-        {
-          "number": "040",
-          "kind": "special",
-          "label": "Brilhante/Especial 040"
+          "number": "MEX20",
+          "kind": "normal",
+          "label": "Cesar Huerta - Mexico"
         }
       ]
     },
     {
-      "id": "country-03",
+      "id": "rsa",
       "order": 3,
-      "name": "País 03",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "RSA",
+      "name": "South Africa",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "041",
+          "number": "RSA1",
+          "kind": "golden-special",
+          "label": "Team Logo - South Africa"
+        },
+        {
+          "number": "RSA2",
           "kind": "normal",
-          "label": "Carta 041"
+          "label": "Ronwen Williams - South Africa"
         },
         {
-          "number": "042",
+          "number": "RSA3",
           "kind": "normal",
-          "label": "Carta 042"
+          "label": "Sipho Chaine - South Africa"
         },
         {
-          "number": "043",
+          "number": "RSA4",
           "kind": "normal",
-          "label": "Carta 043"
+          "label": "Aubrey Modiba - South Africa"
         },
         {
-          "number": "044",
+          "number": "RSA5",
           "kind": "normal",
-          "label": "Carta 044"
+          "label": "Samukele Kabini - South Africa"
         },
         {
-          "number": "045",
+          "number": "RSA6",
           "kind": "normal",
-          "label": "Carta 045"
+          "label": "Mbekezeli Mbokazi - South Africa"
         },
         {
-          "number": "046",
+          "number": "RSA7",
           "kind": "normal",
-          "label": "Carta 046"
+          "label": "Khulumani Ndamane - South Africa"
         },
         {
-          "number": "047",
+          "number": "RSA8",
           "kind": "normal",
-          "label": "Carta 047"
+          "label": "Siyabonga Ngezana - South Africa"
         },
         {
-          "number": "048",
+          "number": "RSA9",
           "kind": "normal",
-          "label": "Carta 048"
+          "label": "Khuliso Mudau - South Africa"
         },
         {
-          "number": "049",
+          "number": "RSA10",
           "kind": "normal",
-          "label": "Carta 049"
+          "label": "Nkosinathi Sibisi - South Africa"
         },
         {
-          "number": "050",
+          "number": "RSA11",
           "kind": "normal",
-          "label": "Carta 050"
+          "label": "Teboho Mokoena - South Africa"
         },
         {
-          "number": "051",
+          "number": "RSA12",
           "kind": "normal",
-          "label": "Carta 051"
+          "label": "Thalente Mbatha - South Africa"
         },
         {
-          "number": "052",
+          "number": "RSA13",
           "kind": "normal",
-          "label": "Carta 052"
+          "label": "Team Photo - South Africa"
         },
         {
-          "number": "053",
+          "number": "RSA14",
           "kind": "normal",
-          "label": "Carta 053"
+          "label": "Bathasi Aubaas - South Africa"
         },
         {
-          "number": "054",
+          "number": "RSA15",
           "kind": "normal",
-          "label": "Carta 054"
+          "label": "Yaya Sithole - South Africa"
         },
         {
-          "number": "055",
+          "number": "RSA16",
           "kind": "normal",
-          "label": "Carta 055"
+          "label": "Sipho Mbule - South Africa"
         },
         {
-          "number": "056",
+          "number": "RSA17",
           "kind": "normal",
-          "label": "Carta 056"
+          "label": "Lyle Foster - South Africa"
         },
         {
-          "number": "057",
+          "number": "RSA18",
           "kind": "normal",
-          "label": "Carta 057"
+          "label": "Iqraam Rayners - South Africa"
         },
         {
-          "number": "058",
+          "number": "RSA19",
           "kind": "normal",
-          "label": "Carta 058"
+          "label": "Mohau Nkota - South Africa"
         },
         {
-          "number": "059",
-          "kind": "special",
-          "label": "Brilhante/Especial 059"
-        },
-        {
-          "number": "060",
-          "kind": "special",
-          "label": "Brilhante/Especial 060"
+          "number": "RSA20",
+          "kind": "normal",
+          "label": "Oswin Appollis - South Africa"
         }
       ]
     },
     {
-      "id": "country-04",
+      "id": "kor",
       "order": 4,
-      "name": "País 04",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "KOR",
+      "name": "South Korea",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "061",
+          "number": "KOR1",
+          "kind": "golden-special",
+          "label": "Team Logo - South Korea"
+        },
+        {
+          "number": "KOR2",
           "kind": "normal",
-          "label": "Carta 061"
+          "label": "Hyeon-woo Jo - South Korea"
         },
         {
-          "number": "062",
+          "number": "KOR3",
           "kind": "normal",
-          "label": "Carta 062"
+          "label": "Seung-Gyu Kim - South Korea"
         },
         {
-          "number": "063",
+          "number": "KOR4",
           "kind": "normal",
-          "label": "Carta 063"
+          "label": "Min-jae Kim - South Korea"
         },
         {
-          "number": "064",
+          "number": "KOR5",
           "kind": "normal",
-          "label": "Carta 064"
+          "label": "Yu-min Cho - South Korea"
         },
         {
-          "number": "065",
+          "number": "KOR6",
           "kind": "normal",
-          "label": "Carta 065"
+          "label": "Young-woo Seol - South Korea"
         },
         {
-          "number": "066",
+          "number": "KOR7",
           "kind": "normal",
-          "label": "Carta 066"
+          "label": "Han-beom Lee - South Korea"
         },
         {
-          "number": "067",
+          "number": "KOR8",
           "kind": "normal",
-          "label": "Carta 067"
+          "label": "Tae-seok Lee - South Korea"
         },
         {
-          "number": "068",
+          "number": "KOR9",
           "kind": "normal",
-          "label": "Carta 068"
+          "label": "Myung-jae Lee - South Korea"
         },
         {
-          "number": "069",
+          "number": "KOR10",
           "kind": "normal",
-          "label": "Carta 069"
+          "label": "Jae-sung Lee - South Korea"
         },
         {
-          "number": "070",
+          "number": "KOR11",
           "kind": "normal",
-          "label": "Carta 070"
+          "label": "In-beom Hwang - South Korea"
         },
         {
-          "number": "071",
+          "number": "KOR12",
           "kind": "normal",
-          "label": "Carta 071"
+          "label": "Kang-in Lee - South Korea"
         },
         {
-          "number": "072",
+          "number": "KOR13",
           "kind": "normal",
-          "label": "Carta 072"
+          "label": "Team Photo - South Korea"
         },
         {
-          "number": "073",
+          "number": "KOR14",
           "kind": "normal",
-          "label": "Carta 073"
+          "label": "Seung-ho Paik - South Korea"
         },
         {
-          "number": "074",
+          "number": "KOR15",
           "kind": "normal",
-          "label": "Carta 074"
+          "label": "Jens Castrop - South Korea"
         },
         {
-          "number": "075",
+          "number": "KOR16",
           "kind": "normal",
-          "label": "Carta 075"
+          "label": "Dongg-yeong Lee - South Korea"
         },
         {
-          "number": "076",
+          "number": "KOR17",
           "kind": "normal",
-          "label": "Carta 076"
+          "label": "Gue-sung Cho - South Korea"
         },
         {
-          "number": "077",
+          "number": "KOR18",
           "kind": "normal",
-          "label": "Carta 077"
+          "label": "Heung-min Son - South Korea"
         },
         {
-          "number": "078",
+          "number": "KOR19",
           "kind": "normal",
-          "label": "Carta 078"
+          "label": "Hee-chan Hwang - South Korea"
         },
         {
-          "number": "079",
-          "kind": "special",
-          "label": "Brilhante/Especial 079"
-        },
-        {
-          "number": "080",
-          "kind": "special",
-          "label": "Brilhante/Especial 080"
+          "number": "KOR20",
+          "kind": "normal",
+          "label": "Hyeon-Gyu Oh - South Korea"
         }
       ]
     },
     {
-      "id": "country-05",
+      "id": "cze",
       "order": 5,
-      "name": "País 05",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CZE",
+      "name": "Czechia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "081",
+          "number": "CZE1",
+          "kind": "golden-special",
+          "label": "Team Logo - Czechia"
+        },
+        {
+          "number": "CZE2",
           "kind": "normal",
-          "label": "Carta 081"
+          "label": "Matej Kovar - Czechia"
         },
         {
-          "number": "082",
+          "number": "CZE3",
           "kind": "normal",
-          "label": "Carta 082"
+          "label": "Jindrich Stanek - Czechia"
         },
         {
-          "number": "083",
+          "number": "CZE4",
           "kind": "normal",
-          "label": "Carta 083"
+          "label": "Ladislav Krejci - Czechia"
         },
         {
-          "number": "084",
+          "number": "CZE5",
           "kind": "normal",
-          "label": "Carta 084"
+          "label": "Vladimir Coufal - Czechia"
         },
         {
-          "number": "085",
+          "number": "CZE6",
           "kind": "normal",
-          "label": "Carta 085"
+          "label": "Jaroslav Zeleny - Czechia"
         },
         {
-          "number": "086",
+          "number": "CZE7",
           "kind": "normal",
-          "label": "Carta 086"
+          "label": "Tomas Holes - Czechia"
         },
         {
-          "number": "087",
+          "number": "CZE8",
           "kind": "normal",
-          "label": "Carta 087"
+          "label": "David Zima - Czechia"
         },
         {
-          "number": "088",
+          "number": "CZE9",
           "kind": "normal",
-          "label": "Carta 088"
+          "label": "Michal Sadilek - Czechia"
         },
         {
-          "number": "089",
+          "number": "CZE10",
           "kind": "normal",
-          "label": "Carta 089"
+          "label": "Lukas Provod - Czechia"
         },
         {
-          "number": "090",
+          "number": "CZE11",
           "kind": "normal",
-          "label": "Carta 090"
+          "label": "Lukas Cerv - Czechia"
         },
         {
-          "number": "091",
+          "number": "CZE12",
           "kind": "normal",
-          "label": "Carta 091"
+          "label": "Tomas Soucek - Czechia"
         },
         {
-          "number": "092",
+          "number": "CZE13",
           "kind": "normal",
-          "label": "Carta 092"
+          "label": "Team Photo - Czechia"
         },
         {
-          "number": "093",
+          "number": "CZE14",
           "kind": "normal",
-          "label": "Carta 093"
+          "label": "Pavel Sulc - Czechia"
         },
         {
-          "number": "094",
+          "number": "CZE15",
           "kind": "normal",
-          "label": "Carta 094"
+          "label": "Matej Vydra - Czechia"
         },
         {
-          "number": "095",
+          "number": "CZE16",
           "kind": "normal",
-          "label": "Carta 095"
+          "label": "Vasil Kusej - Czechia"
         },
         {
-          "number": "096",
+          "number": "CZE17",
           "kind": "normal",
-          "label": "Carta 096"
+          "label": "Tomas Chory - Czechia"
         },
         {
-          "number": "097",
+          "number": "CZE18",
           "kind": "normal",
-          "label": "Carta 097"
+          "label": "Vaclav Cerny - Czechia"
         },
         {
-          "number": "098",
+          "number": "CZE19",
           "kind": "normal",
-          "label": "Carta 098"
+          "label": "Adam Hlozek - Czechia"
         },
         {
-          "number": "099",
-          "kind": "special",
-          "label": "Brilhante/Especial 099"
-        },
-        {
-          "number": "100",
-          "kind": "special",
-          "label": "Brilhante/Especial 100"
+          "number": "CZE20",
+          "kind": "normal",
+          "label": "Patrik Schick - Czechia"
         }
       ]
     },
     {
-      "id": "country-06",
+      "id": "can",
       "order": 6,
-      "name": "País 06",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CAN",
+      "name": "Canada",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "101",
+          "number": "CAN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Canada"
+        },
+        {
+          "number": "CAN2",
           "kind": "normal",
-          "label": "Carta 101"
+          "label": "Dayne St.Clair - Canada"
         },
         {
-          "number": "102",
+          "number": "CAN3",
           "kind": "normal",
-          "label": "Carta 102"
+          "label": "Alphonso Davies - Canada"
         },
         {
-          "number": "103",
+          "number": "CAN4",
           "kind": "normal",
-          "label": "Carta 103"
+          "label": "Alistair Johnston - Canada"
         },
         {
-          "number": "104",
+          "number": "CAN5",
           "kind": "normal",
-          "label": "Carta 104"
+          "label": "Samuel Adekugbe - Canada"
         },
         {
-          "number": "105",
+          "number": "CAN6",
           "kind": "normal",
-          "label": "Carta 105"
+          "label": "Riche Larvea - Canada"
         },
         {
-          "number": "106",
+          "number": "CAN7",
           "kind": "normal",
-          "label": "Carta 106"
+          "label": "Derek Cornelius - Canada"
         },
         {
-          "number": "107",
+          "number": "CAN8",
           "kind": "normal",
-          "label": "Carta 107"
+          "label": "Moïse Bombito - Canada"
         },
         {
-          "number": "108",
+          "number": "CAN9",
           "kind": "normal",
-          "label": "Carta 108"
+          "label": "Kamal Miller - Canada"
         },
         {
-          "number": "109",
+          "number": "CAN10",
           "kind": "normal",
-          "label": "Carta 109"
+          "label": "Stephen Eustáquio - Canada"
         },
         {
-          "number": "110",
+          "number": "CAN11",
           "kind": "normal",
-          "label": "Carta 110"
+          "label": "Ismaël Koné - Canada"
         },
         {
-          "number": "111",
+          "number": "CAN12",
           "kind": "normal",
-          "label": "Carta 111"
+          "label": "Jonathan Osorio - Canada"
         },
         {
-          "number": "112",
+          "number": "CAN13",
           "kind": "normal",
-          "label": "Carta 112"
+          "label": "Team Photo - Canada"
         },
         {
-          "number": "113",
+          "number": "CAN14",
           "kind": "normal",
-          "label": "Carta 113"
+          "label": "Jacob Shaffelburg - Canada"
         },
         {
-          "number": "114",
+          "number": "CAN15",
           "kind": "normal",
-          "label": "Carta 114"
+          "label": "Mathieu Choinière - Canada"
         },
         {
-          "number": "115",
+          "number": "CAN16",
           "kind": "normal",
-          "label": "Carta 115"
+          "label": "Niko Sigur - Canada"
         },
         {
-          "number": "116",
+          "number": "CAN17",
           "kind": "normal",
-          "label": "Carta 116"
+          "label": "Tajon Buchanan - Canada"
         },
         {
-          "number": "117",
+          "number": "CAN18",
           "kind": "normal",
-          "label": "Carta 117"
+          "label": "Liam Millar - Canada"
         },
         {
-          "number": "118",
+          "number": "CAN19",
           "kind": "normal",
-          "label": "Carta 118"
+          "label": "Cyle Larin - Canada"
         },
         {
-          "number": "119",
-          "kind": "special",
-          "label": "Brilhante/Especial 119"
-        },
-        {
-          "number": "120",
-          "kind": "special",
-          "label": "Brilhante/Especial 120"
+          "number": "CAN20",
+          "kind": "normal",
+          "label": "Jonathan David - Canada"
         }
       ]
     },
     {
-      "id": "country-07",
+      "id": "bih",
       "order": 7,
-      "name": "País 07",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "121",
+          "number": "BIH1",
+          "kind": "golden-special",
+          "label": "Team Logo - Bosnia and Herzegovina"
+        },
+        {
+          "number": "BIH2",
           "kind": "normal",
-          "label": "Carta 121"
+          "label": "Nikola Vasilj - Bosnia and Herzegovina"
         },
         {
-          "number": "122",
+          "number": "BIH3",
           "kind": "normal",
-          "label": "Carta 122"
+          "label": "Amer Dedic - Bosnia and Herzegovina"
         },
         {
-          "number": "123",
+          "number": "BIH4",
           "kind": "normal",
-          "label": "Carta 123"
+          "label": "Sead Kolasinac - Bosnia and Herzegovina"
         },
         {
-          "number": "124",
+          "number": "BIH5",
           "kind": "normal",
-          "label": "Carta 124"
+          "label": "Tarik Muharemovic - Bosnia and Herzegovina"
         },
         {
-          "number": "125",
+          "number": "BIH6",
           "kind": "normal",
-          "label": "Carta 125"
+          "label": "Nihad Mujakic - Bosnia and Herzegovina"
         },
         {
-          "number": "126",
+          "number": "BIH7",
           "kind": "normal",
-          "label": "Carta 126"
+          "label": "Nikola Katic - Bosnia and Herzegovina"
         },
         {
-          "number": "127",
+          "number": "BIH8",
           "kind": "normal",
-          "label": "Carta 127"
+          "label": "Amir Hadziahmetovic - Bosnia and Herzegovina"
         },
         {
-          "number": "128",
+          "number": "BIH9",
           "kind": "normal",
-          "label": "Carta 128"
+          "label": "Benjamin Tahirovic - Bosnia and Herzegovina"
         },
         {
-          "number": "129",
+          "number": "BIH10",
           "kind": "normal",
-          "label": "Carta 129"
+          "label": "Armin Gigovic - Bosnia and Herzegovina"
         },
         {
-          "number": "130",
+          "number": "BIH11",
           "kind": "normal",
-          "label": "Carta 130"
+          "label": "Ivan Sunjic - Bosnia and Herzegovina"
         },
         {
-          "number": "131",
+          "number": "BIH12",
           "kind": "normal",
-          "label": "Carta 131"
+          "label": "Ivan Basic - Bosnia and Herzegovina"
         },
         {
-          "number": "132",
+          "number": "BIH13",
           "kind": "normal",
-          "label": "Carta 132"
+          "label": "Team Photo - Bosnia and Herzegovina"
         },
         {
-          "number": "133",
+          "number": "BIH14",
           "kind": "normal",
-          "label": "Carta 133"
+          "label": "Dzenis Burnic - Bosnia and Herzegovina"
         },
         {
-          "number": "134",
+          "number": "BIH15",
           "kind": "normal",
-          "label": "Carta 134"
+          "label": "Esmir Bajraktarevic - Bosnia and Herzegovina"
         },
         {
-          "number": "135",
+          "number": "BIH16",
           "kind": "normal",
-          "label": "Carta 135"
+          "label": "Amar Memic - Bosnia and Herzegovina"
         },
         {
-          "number": "136",
+          "number": "BIH17",
           "kind": "normal",
-          "label": "Carta 136"
+          "label": "Ermedin Demirovic - Bosnia and Herzegovina"
         },
         {
-          "number": "137",
+          "number": "BIH18",
           "kind": "normal",
-          "label": "Carta 137"
+          "label": "Edin Dzeko - Bosnia and Herzegovina"
         },
         {
-          "number": "138",
+          "number": "BIH19",
           "kind": "normal",
-          "label": "Carta 138"
+          "label": "Samed Bazdar - Bosnia and Herzegovina"
         },
         {
-          "number": "139",
-          "kind": "special",
-          "label": "Brilhante/Especial 139"
-        },
-        {
-          "number": "140",
-          "kind": "special",
-          "label": "Brilhante/Especial 140"
+          "number": "BIH20",
+          "kind": "normal",
+          "label": "Haris Tabakovic - Bosnia and Herzegovina"
         }
       ]
     },
     {
-      "id": "country-08",
+      "id": "qat",
       "order": 8,
-      "name": "País 08",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "QAT",
+      "name": "Qatar",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "141",
+          "number": "QAT1",
+          "kind": "golden-special",
+          "label": "Team Logo - Qatar"
+        },
+        {
+          "number": "QAT2",
           "kind": "normal",
-          "label": "Carta 141"
+          "label": "Meshaal Barsham - Qatar"
         },
         {
-          "number": "142",
+          "number": "QAT3",
           "kind": "normal",
-          "label": "Carta 142"
+          "label": "Sultan Albrake - Qatar"
         },
         {
-          "number": "143",
+          "number": "QAT4",
           "kind": "normal",
-          "label": "Carta 143"
+          "label": "Lucas Mendes - Qatar"
         },
         {
-          "number": "144",
+          "number": "QAT5",
           "kind": "normal",
-          "label": "Carta 144"
+          "label": "Homam Ahmed - Qatar"
         },
         {
-          "number": "145",
+          "number": "QAT6",
           "kind": "normal",
-          "label": "Carta 145"
+          "label": "Boualem Khoukhi - Qatar"
         },
         {
-          "number": "146",
+          "number": "QAT7",
           "kind": "normal",
-          "label": "Carta 146"
+          "label": "Pedro Miguel - Qatar"
         },
         {
-          "number": "147",
+          "number": "QAT8",
           "kind": "normal",
-          "label": "Carta 147"
+          "label": "Tarek Salman - Qatar"
         },
         {
-          "number": "148",
+          "number": "QAT9",
           "kind": "normal",
-          "label": "Carta 148"
+          "label": "Mohamed Al-Mannai - Qatar"
         },
         {
-          "number": "149",
+          "number": "QAT10",
           "kind": "normal",
-          "label": "Carta 149"
+          "label": "Karim Boudiaf - Qatar"
         },
         {
-          "number": "150",
+          "number": "QAT11",
           "kind": "normal",
-          "label": "Carta 150"
+          "label": "Assim Madibo - Qatar"
         },
         {
-          "number": "151",
+          "number": "QAT12",
           "kind": "normal",
-          "label": "Carta 151"
+          "label": "Ahmed Fatehi - Qatar"
         },
         {
-          "number": "152",
+          "number": "QAT13",
           "kind": "normal",
-          "label": "Carta 152"
+          "label": "Team Photo - Qatar"
         },
         {
-          "number": "153",
+          "number": "QAT14",
           "kind": "normal",
-          "label": "Carta 153"
+          "label": "Mohammed Waad - Qatar"
         },
         {
-          "number": "154",
+          "number": "QAT15",
           "kind": "normal",
-          "label": "Carta 154"
+          "label": "Abdulaziz Hatem - Qatar"
         },
         {
-          "number": "155",
+          "number": "QAT16",
           "kind": "normal",
-          "label": "Carta 155"
+          "label": "Hassan Al-Haydos - Qatar"
         },
         {
-          "number": "156",
+          "number": "QAT17",
           "kind": "normal",
-          "label": "Carta 156"
+          "label": "Edmilson Junior - Qatar"
         },
         {
-          "number": "157",
+          "number": "QAT18",
           "kind": "normal",
-          "label": "Carta 157"
+          "label": "Akram Hassan Afif - Qatar"
         },
         {
-          "number": "158",
+          "number": "QAT19",
           "kind": "normal",
-          "label": "Carta 158"
+          "label": "Ahmed Al Ganehi - Qatar"
         },
         {
-          "number": "159",
-          "kind": "special",
-          "label": "Brilhante/Especial 159"
-        },
-        {
-          "number": "160",
-          "kind": "special",
-          "label": "Brilhante/Especial 160"
+          "number": "QAT20",
+          "kind": "normal",
+          "label": "Almoez Ali - Qatar"
         }
       ]
     },
     {
-      "id": "country-09",
+      "id": "sui",
       "order": 9,
-      "name": "País 09",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "SUI",
+      "name": "Switzerland",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "161",
+          "number": "SUI1",
+          "kind": "golden-special",
+          "label": "Team Logo - Switzerland"
+        },
+        {
+          "number": "SUI2",
           "kind": "normal",
-          "label": "Carta 161"
+          "label": "Gregor Kobel - Switzerland"
         },
         {
-          "number": "162",
+          "number": "SUI3",
           "kind": "normal",
-          "label": "Carta 162"
+          "label": "Yvon Mvogo - Switzerland"
         },
         {
-          "number": "163",
+          "number": "SUI4",
           "kind": "normal",
-          "label": "Carta 163"
+          "label": "Manuel Akanji - Switzerland"
         },
         {
-          "number": "164",
+          "number": "SUI5",
           "kind": "normal",
-          "label": "Carta 164"
+          "label": "Ricardo Rodriguez - Switzerland"
         },
         {
-          "number": "165",
+          "number": "SUI6",
           "kind": "normal",
-          "label": "Carta 165"
+          "label": "Nico Elvedi - Switzerland"
         },
         {
-          "number": "166",
+          "number": "SUI7",
           "kind": "normal",
-          "label": "Carta 166"
+          "label": "Aurèle Amenda - Switzerland"
         },
         {
-          "number": "167",
+          "number": "SUI8",
           "kind": "normal",
-          "label": "Carta 167"
+          "label": "Silvan Widmer - Switzerland"
         },
         {
-          "number": "168",
+          "number": "SWI9",
           "kind": "normal",
-          "label": "Carta 168"
+          "label": "Granit Xhaka - Switzerland"
         },
         {
-          "number": "169",
+          "number": "SUI10",
           "kind": "normal",
-          "label": "Carta 169"
+          "label": "Denis Zakaria - Switzerland"
         },
         {
-          "number": "170",
+          "number": "SUI11",
           "kind": "normal",
-          "label": "Carta 170"
+          "label": "Remo Freuler - Switzerland"
         },
         {
-          "number": "171",
+          "number": "SUI12",
           "kind": "normal",
-          "label": "Carta 171"
+          "label": "Fabian Rieder - Switzerland"
         },
         {
-          "number": "172",
+          "number": "SUI13",
           "kind": "normal",
-          "label": "Carta 172"
+          "label": "Team Photo - Switzerland"
         },
         {
-          "number": "173",
+          "number": "SUI14",
           "kind": "normal",
-          "label": "Carta 173"
+          "label": "Ardon Jashari - Switzerland"
         },
         {
-          "number": "174",
+          "number": "SUI15",
           "kind": "normal",
-          "label": "Carta 174"
+          "label": "Johan Manzambi - Switzerland"
         },
         {
-          "number": "175",
+          "number": "SUI16",
           "kind": "normal",
-          "label": "Carta 175"
+          "label": "Michel Aebischer - Switzerland"
         },
         {
-          "number": "176",
+          "number": "SUI17",
           "kind": "normal",
-          "label": "Carta 176"
+          "label": "Breel Embolo - Switzerland"
         },
         {
-          "number": "177",
+          "number": "SUI18",
           "kind": "normal",
-          "label": "Carta 177"
+          "label": "Ruben Vargas - Switzerland"
         },
         {
-          "number": "178",
+          "number": "SUI19",
           "kind": "normal",
-          "label": "Carta 178"
+          "label": "Dan Ndoye - Switzerland"
         },
         {
-          "number": "179",
-          "kind": "special",
-          "label": "Brilhante/Especial 179"
-        },
-        {
-          "number": "180",
-          "kind": "special",
-          "label": "Brilhante/Especial 180"
+          "number": "SWI20",
+          "kind": "normal",
+          "label": "Zeki Amdouni - Switzerland"
         }
       ]
     },
     {
-      "id": "country-10",
+      "id": "bra",
       "order": 10,
-      "name": "País 10",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "BRA",
+      "name": "Brazil",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "181",
+          "number": "BRA1",
+          "kind": "golden-special",
+          "label": "Team Logo - Brazil"
+        },
+        {
+          "number": "BRA2",
           "kind": "normal",
-          "label": "Carta 181"
+          "label": "Alisson - Brazil"
         },
         {
-          "number": "182",
+          "number": "BRA3",
           "kind": "normal",
-          "label": "Carta 182"
+          "label": "Bento - Brazil"
         },
         {
-          "number": "183",
+          "number": "BRA4",
           "kind": "normal",
-          "label": "Carta 183"
+          "label": "Marquinhos - Brazil"
         },
         {
-          "number": "184",
+          "number": "BRA5",
           "kind": "normal",
-          "label": "Carta 184"
+          "label": "Éder Militão - Brazil"
         },
         {
-          "number": "185",
+          "number": "BRA6",
           "kind": "normal",
-          "label": "Carta 185"
+          "label": "Gabriel Magalhães - Brazil"
         },
         {
-          "number": "186",
+          "number": "BRA7",
           "kind": "normal",
-          "label": "Carta 186"
+          "label": "Danilo - Brazil"
         },
         {
-          "number": "187",
+          "number": "BRA8",
           "kind": "normal",
-          "label": "Carta 187"
+          "label": "Wesley - Brazil"
         },
         {
-          "number": "188",
+          "number": "BRA9",
           "kind": "normal",
-          "label": "Carta 188"
+          "label": "Lucas Paquetá - Brazil"
         },
         {
-          "number": "189",
+          "number": "BRA10",
           "kind": "normal",
-          "label": "Carta 189"
+          "label": "Casemiro - Brazil"
         },
         {
-          "number": "190",
+          "number": "BRA11",
           "kind": "normal",
-          "label": "Carta 190"
+          "label": "Bruno Guimarães - Brazil"
         },
         {
-          "number": "191",
+          "number": "BRA12",
           "kind": "normal",
-          "label": "Carta 191"
+          "label": "Luiz Henrique - Brazil"
         },
         {
-          "number": "192",
+          "number": "BRA13",
           "kind": "normal",
-          "label": "Carta 192"
+          "label": "Team Photo - Brazil"
         },
         {
-          "number": "193",
+          "number": "BRA14",
           "kind": "normal",
-          "label": "Carta 193"
+          "label": "Vinicius Júnior - Brazil"
         },
         {
-          "number": "194",
+          "number": "BRA15",
           "kind": "normal",
-          "label": "Carta 194"
+          "label": "Rodrygo - Brazil"
         },
         {
-          "number": "195",
+          "number": "BRA16",
           "kind": "normal",
-          "label": "Carta 195"
+          "label": "João Pedro - Brazil"
         },
         {
-          "number": "196",
+          "number": "BRA17",
           "kind": "normal",
-          "label": "Carta 196"
+          "label": "Matheus Cunha - Brazil"
         },
         {
-          "number": "197",
+          "number": "BRA18",
           "kind": "normal",
-          "label": "Carta 197"
+          "label": "Gabriel Martinelli - Brazil"
         },
         {
-          "number": "198",
+          "number": "BRA19",
           "kind": "normal",
-          "label": "Carta 198"
+          "label": "Raphinha - Brazil"
         },
         {
-          "number": "199",
-          "kind": "special",
-          "label": "Brilhante/Especial 199"
-        },
-        {
-          "number": "200",
-          "kind": "special",
-          "label": "Brilhante/Especial 200"
+          "number": "BRA20",
+          "kind": "normal",
+          "label": "Estévão - Brazil"
         }
       ]
     },
     {
-      "id": "country-11",
+      "id": "mar",
       "order": 11,
-      "name": "País 11",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "MAR",
+      "name": "Morocco",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "201",
+          "number": "MAR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Morocco"
+        },
+        {
+          "number": "MAR2",
           "kind": "normal",
-          "label": "Carta 201"
+          "label": "Yassine Bounou - Morocco"
         },
         {
-          "number": "202",
+          "number": "MAR3",
           "kind": "normal",
-          "label": "Carta 202"
+          "label": "Munir El Kajoui - Morocco"
         },
         {
-          "number": "203",
+          "number": "MAR4",
           "kind": "normal",
-          "label": "Carta 203"
+          "label": "Achraf Hakimi - Morocco"
         },
         {
-          "number": "204",
+          "number": "MAR5",
           "kind": "normal",
-          "label": "Carta 204"
+          "label": "Noussair Mazraoui - Morocco"
         },
         {
-          "number": "205",
+          "number": "MAR6",
           "kind": "normal",
-          "label": "Carta 205"
+          "label": "Nayef Aguerd - Morocco"
         },
         {
-          "number": "206",
+          "number": "MAR7",
           "kind": "normal",
-          "label": "Carta 206"
+          "label": "Roman Saiss - Morocco"
         },
         {
-          "number": "207",
+          "number": "MAR8",
           "kind": "normal",
-          "label": "Carta 207"
+          "label": "Jawad El Yamio - Morocco"
         },
         {
-          "number": "208",
+          "number": "MAR9",
           "kind": "normal",
-          "label": "Carta 208"
+          "label": "Adam Masina - Morocco"
         },
         {
-          "number": "209",
+          "number": "MAR10",
           "kind": "normal",
-          "label": "Carta 209"
+          "label": "Sofyan Amrabat - Morocco"
         },
         {
-          "number": "210",
+          "number": "MAR11",
           "kind": "normal",
-          "label": "Carta 210"
+          "label": "Azzedine Ounahi - Morocco"
         },
         {
-          "number": "211",
+          "number": "MAR12",
           "kind": "normal",
-          "label": "Carta 211"
+          "label": "Eliesse Ben Seghir - Morocco"
         },
         {
-          "number": "212",
+          "number": "MAR13",
           "kind": "normal",
-          "label": "Carta 212"
+          "label": "Team Photo - Morocco"
         },
         {
-          "number": "213",
+          "number": "MAR14",
           "kind": "normal",
-          "label": "Carta 213"
+          "label": "Bilal El Khannouss - Morocco"
         },
         {
-          "number": "214",
+          "number": "MAR15",
           "kind": "normal",
-          "label": "Carta 214"
+          "label": "Ismael Saibari - Morocco"
         },
         {
-          "number": "215",
+          "number": "MAR16",
           "kind": "normal",
-          "label": "Carta 215"
+          "label": "Youssef En-Nesyri - Morocco"
         },
         {
-          "number": "216",
+          "number": "MAR17",
           "kind": "normal",
-          "label": "Carta 216"
+          "label": "Abde Ezzalzouli - Morocco"
         },
         {
-          "number": "217",
+          "number": "MAR18",
           "kind": "normal",
-          "label": "Carta 217"
+          "label": "Soufiane Rahimi - Morocco"
         },
         {
-          "number": "218",
+          "number": "MAR19",
           "kind": "normal",
-          "label": "Carta 218"
+          "label": "Brahim Diaz - Morocco"
         },
         {
-          "number": "219",
-          "kind": "special",
-          "label": "Brilhante/Especial 219"
-        },
-        {
-          "number": "220",
-          "kind": "special",
-          "label": "Brilhante/Especial 220"
+          "number": "MAR20",
+          "kind": "normal",
+          "label": "Ayoub El Kaabi - Morocco"
         }
       ]
     },
     {
-      "id": "country-12",
+      "id": "hai",
       "order": 12,
-      "name": "País 12",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "HAI",
+      "name": "Haiti",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "221",
+          "number": "HAI1",
+          "kind": "golden-special",
+          "label": "Team Logo - Haiti"
+        },
+        {
+          "number": "HAI2",
           "kind": "normal",
-          "label": "Carta 221"
+          "label": "Johny Placide - Haiti"
         },
         {
-          "number": "222",
+          "number": "HAI3",
           "kind": "normal",
-          "label": "Carta 222"
+          "label": "Carlens Arcus - Haiti"
         },
         {
-          "number": "223",
+          "number": "HAI4",
           "kind": "normal",
-          "label": "Carta 223"
+          "label": "Martin Expérience - Haiti"
         },
         {
-          "number": "224",
+          "number": "HAI5",
           "kind": "normal",
-          "label": "Carta 224"
+          "label": "Jean-Kevin Duverne - Haiti"
         },
         {
-          "number": "225",
+          "number": "HAI6",
           "kind": "normal",
-          "label": "Carta 225"
+          "label": "Ricardo Adé - Haiti"
         },
         {
-          "number": "226",
+          "number": "HAI7",
           "kind": "normal",
-          "label": "Carta 226"
+          "label": "Duke Lacroix - Haiti"
         },
         {
-          "number": "227",
+          "number": "HAI8",
           "kind": "normal",
-          "label": "Carta 227"
+          "label": "Garven Metusala - Haiti"
         },
         {
-          "number": "228",
+          "number": "HAI9",
           "kind": "normal",
-          "label": "Carta 228"
+          "label": "Hannes Delcroix - Haiti"
         },
         {
-          "number": "229",
+          "number": "HAI10",
           "kind": "normal",
-          "label": "Carta 229"
+          "label": "Leverton Pierre - Haiti"
         },
         {
-          "number": "230",
+          "number": "HAI11",
           "kind": "normal",
-          "label": "Carta 230"
+          "label": "Danley Jean Jacques - Haiti"
         },
         {
-          "number": "231",
+          "number": "HAI12",
           "kind": "normal",
-          "label": "Carta 231"
+          "label": "Jean-Ricner Bellegarde - Haiti"
         },
         {
-          "number": "232",
+          "number": "HAI13",
           "kind": "normal",
-          "label": "Carta 232"
+          "label": "Team Photo - Haiti"
         },
         {
-          "number": "233",
+          "number": "HAI14",
           "kind": "normal",
-          "label": "Carta 233"
+          "label": "Christopher Attys - Haiti"
         },
         {
-          "number": "234",
+          "number": "HAI15",
           "kind": "normal",
-          "label": "Carta 234"
+          "label": "Derrick Etienne Jr - Haiti"
         },
         {
-          "number": "235",
+          "number": "HAI16",
           "kind": "normal",
-          "label": "Carta 235"
+          "label": "Josue Casimir - Haiti"
         },
         {
-          "number": "236",
+          "number": "HAI17",
           "kind": "normal",
-          "label": "Carta 236"
+          "label": "Ruben Providence - Haiti"
         },
         {
-          "number": "237",
+          "number": "HAI18",
           "kind": "normal",
-          "label": "Carta 237"
+          "label": "Duckens Nazon - Haiti"
         },
         {
-          "number": "238",
+          "number": "HAI19",
           "kind": "normal",
-          "label": "Carta 238"
+          "label": "Louicius Deedson - Haiti"
         },
         {
-          "number": "239",
-          "kind": "special",
-          "label": "Brilhante/Especial 239"
-        },
-        {
-          "number": "240",
-          "kind": "special",
-          "label": "Brilhante/Especial 240"
+          "number": "HAI20",
+          "kind": "normal",
+          "label": "Frantzdy Pierrot - Haiti"
         }
       ]
     },
     {
-      "id": "country-13",
+      "id": "sco",
       "order": 13,
-      "name": "País 13",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "SCO",
+      "name": "Scotland",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "241",
+          "number": "SCO1",
+          "kind": "golden-special",
+          "label": "Team Logo - Scotland"
+        },
+        {
+          "number": "SCO2",
           "kind": "normal",
-          "label": "Carta 241"
+          "label": "Angus Gunn - Scotland"
         },
         {
-          "number": "242",
+          "number": "SCO3",
           "kind": "normal",
-          "label": "Carta 242"
+          "label": "Jack Hendry - Scotland"
         },
         {
-          "number": "243",
+          "number": "SCO4",
           "kind": "normal",
-          "label": "Carta 243"
+          "label": "Kieran Tierney - Scotland"
         },
         {
-          "number": "244",
+          "number": "SCO5",
           "kind": "normal",
-          "label": "Carta 244"
+          "label": "Aaron Hickey - Scotland"
         },
         {
-          "number": "245",
+          "number": "SCO6",
           "kind": "normal",
-          "label": "Carta 245"
+          "label": "Andrew Robertson - Scotland"
         },
         {
-          "number": "246",
+          "number": "SCO7",
           "kind": "normal",
-          "label": "Carta 246"
+          "label": "Scott McKenna - Scotland"
         },
         {
-          "number": "247",
+          "number": "SCO8",
           "kind": "normal",
-          "label": "Carta 247"
+          "label": "John Souttar - Scotland"
         },
         {
-          "number": "248",
+          "number": "SCO9",
           "kind": "normal",
-          "label": "Carta 248"
+          "label": "Anthony Ralston - Scotland"
         },
         {
-          "number": "249",
+          "number": "SCO10",
           "kind": "normal",
-          "label": "Carta 249"
+          "label": "Grant Hanley - Scotland"
         },
         {
-          "number": "250",
+          "number": "SCO11",
           "kind": "normal",
-          "label": "Carta 250"
+          "label": "Scott McTominay - Scotland"
         },
         {
-          "number": "251",
+          "number": "SCO12",
           "kind": "normal",
-          "label": "Carta 251"
+          "label": "Billy Gilmour - Scotland"
         },
         {
-          "number": "252",
+          "number": "SCO13",
           "kind": "normal",
-          "label": "Carta 252"
+          "label": "Team Photo - Scotland"
         },
         {
-          "number": "253",
+          "number": "SCO14",
           "kind": "normal",
-          "label": "Carta 253"
+          "label": "Lewis Ferguson - Scotland"
         },
         {
-          "number": "254",
+          "number": "SCO15",
           "kind": "normal",
-          "label": "Carta 254"
+          "label": "Ryan Christie - Scotland"
         },
         {
-          "number": "255",
+          "number": "SCO16",
           "kind": "normal",
-          "label": "Carta 255"
+          "label": "Kenny McLean - Scotland"
         },
         {
-          "number": "256",
+          "number": "SCO17",
           "kind": "normal",
-          "label": "Carta 256"
+          "label": "John McGinn - Scotland"
         },
         {
-          "number": "257",
+          "number": "SCO18",
           "kind": "normal",
-          "label": "Carta 257"
+          "label": "Lyndon Dykes - Scotland"
         },
         {
-          "number": "258",
+          "number": "SCO19",
           "kind": "normal",
-          "label": "Carta 258"
+          "label": "Che Adams - Scotland"
         },
         {
-          "number": "259",
-          "kind": "special",
-          "label": "Brilhante/Especial 259"
-        },
-        {
-          "number": "260",
-          "kind": "special",
-          "label": "Brilhante/Especial 260"
+          "number": "SCO20",
+          "kind": "normal",
+          "label": "Ben Gannon-Doak - Scotland"
         }
       ]
     },
     {
-      "id": "country-14",
+      "id": "usa",
       "order": 14,
-      "name": "País 14",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "USA",
+      "name": "USA",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "261",
+          "number": "USA1",
+          "kind": "golden-special",
+          "label": "Team Logo - USA"
+        },
+        {
+          "number": "USA2",
           "kind": "normal",
-          "label": "Carta 261"
+          "label": "Math Freese - USA"
         },
         {
-          "number": "262",
+          "number": "USA3",
           "kind": "normal",
-          "label": "Carta 262"
+          "label": "Chris Richards - USA"
         },
         {
-          "number": "263",
+          "number": "USA4",
           "kind": "normal",
-          "label": "Carta 263"
+          "label": "Tim Ream - USA"
         },
         {
-          "number": "264",
+          "number": "USA5",
           "kind": "normal",
-          "label": "Carta 264"
+          "label": "Mark McKenzie - USA"
         },
         {
-          "number": "265",
+          "number": "USA6",
           "kind": "normal",
-          "label": "Carta 265"
+          "label": "Alex Freeman - USA"
         },
         {
-          "number": "266",
+          "number": "USA7",
           "kind": "normal",
-          "label": "Carta 266"
+          "label": "Antonee Robinson - USA"
         },
         {
-          "number": "267",
+          "number": "USA8",
           "kind": "normal",
-          "label": "Carta 267"
+          "label": "Tyler Adams - USA"
         },
         {
-          "number": "268",
+          "number": "USA9",
           "kind": "normal",
-          "label": "Carta 268"
+          "label": "Tanner Tessmann - USA"
         },
         {
-          "number": "269",
+          "number": "USA10",
           "kind": "normal",
-          "label": "Carta 269"
+          "label": "Weston McKenny - USA"
         },
         {
-          "number": "270",
+          "number": "USA11",
           "kind": "normal",
-          "label": "Carta 270"
+          "label": "Christian Roldan - USA"
         },
         {
-          "number": "271",
+          "number": "USA12",
           "kind": "normal",
-          "label": "Carta 271"
+          "label": "Timothy Weah - USA"
         },
         {
-          "number": "272",
+          "number": "USA13",
           "kind": "normal",
-          "label": "Carta 272"
+          "label": "Team Photo - USA"
         },
         {
-          "number": "273",
+          "number": "USA14",
           "kind": "normal",
-          "label": "Carta 273"
+          "label": "Diego Luna - USA"
         },
         {
-          "number": "274",
+          "number": "USA15",
           "kind": "normal",
-          "label": "Carta 274"
+          "label": "Malik Tillman - USA"
         },
         {
-          "number": "275",
+          "number": "USA16",
           "kind": "normal",
-          "label": "Carta 275"
+          "label": "Christian Pulisic - USA"
         },
         {
-          "number": "276",
+          "number": "USA17",
           "kind": "normal",
-          "label": "Carta 276"
+          "label": "Brenden Aaronson - USA"
         },
         {
-          "number": "277",
+          "number": "USA18",
           "kind": "normal",
-          "label": "Carta 277"
+          "label": "Ricardo Pepi - USA"
         },
         {
-          "number": "278",
+          "number": "USA19",
           "kind": "normal",
-          "label": "Carta 278"
+          "label": "Haji Wright - USA"
         },
         {
-          "number": "279",
-          "kind": "special",
-          "label": "Brilhante/Especial 279"
-        },
-        {
-          "number": "280",
-          "kind": "special",
-          "label": "Brilhante/Especial 280"
+          "number": "USA20",
+          "kind": "normal",
+          "label": "Folarin Balogun - USA"
         }
       ]
     },
     {
-      "id": "country-15",
+      "id": "par",
       "order": 15,
-      "name": "País 15",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "PAR",
+      "name": "Paraguay",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "281",
+          "number": "PAR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Paraguay"
+        },
+        {
+          "number": "PAR2",
           "kind": "normal",
-          "label": "Carta 281"
+          "label": "Roberto Fernandez - Paraguay"
         },
         {
-          "number": "282",
+          "number": "PAR3",
           "kind": "normal",
-          "label": "Carta 282"
+          "label": "Orlando Gill - Paraguay"
         },
         {
-          "number": "283",
+          "number": "PAR4",
           "kind": "normal",
-          "label": "Carta 283"
+          "label": "Gustavo Gomez - Paraguay"
         },
         {
-          "number": "284",
+          "number": "PAR5",
           "kind": "normal",
-          "label": "Carta 284"
+          "label": "Fabián Balbuena - Paraguay"
         },
         {
-          "number": "285",
+          "number": "PAR6",
           "kind": "normal",
-          "label": "Carta 285"
+          "label": "Juan José Cáceres - Paraguay"
         },
         {
-          "number": "286",
+          "number": "PAR7",
           "kind": "normal",
-          "label": "Carta 286"
+          "label": "Omar Alderete - Paraguay"
         },
         {
-          "number": "287",
+          "number": "PAR8",
           "kind": "normal",
-          "label": "Carta 287"
+          "label": "Junior Alonso - Paraguay"
         },
         {
-          "number": "288",
+          "number": "PAR9",
           "kind": "normal",
-          "label": "Carta 288"
+          "label": "Mathías Villasanti - Paraguay"
         },
         {
-          "number": "289",
+          "number": "PAR10",
           "kind": "normal",
-          "label": "Carta 289"
+          "label": "Diego Gomez - Paraguay"
         },
         {
-          "number": "290",
+          "number": "PAR11",
           "kind": "normal",
-          "label": "Carta 290"
+          "label": "Damián Bobadilla - Paraguay"
         },
         {
-          "number": "291",
+          "number": "PAR12",
           "kind": "normal",
-          "label": "Carta 291"
+          "label": "Andres Cubas - Paraguay"
         },
         {
-          "number": "292",
+          "number": "PAR13",
           "kind": "normal",
-          "label": "Carta 292"
+          "label": "Team Photo - Paraguay"
         },
         {
-          "number": "293",
+          "number": "PAR14",
           "kind": "normal",
-          "label": "Carta 293"
+          "label": "Matias Galarza Fonda - Paraguay"
         },
         {
-          "number": "294",
+          "number": "PAR15",
           "kind": "normal",
-          "label": "Carta 294"
+          "label": "Julio Enciso - Paraguay"
         },
         {
-          "number": "295",
+          "number": "PAR16",
           "kind": "normal",
-          "label": "Carta 295"
+          "label": "Alejandro Romero Gamarra - Paraguay"
         },
         {
-          "number": "296",
+          "number": "PAR17",
           "kind": "normal",
-          "label": "Carta 296"
+          "label": "Miguel Almirón - Paraguay"
         },
         {
-          "number": "297",
+          "number": "PAR18",
           "kind": "normal",
-          "label": "Carta 297"
+          "label": "Ramon Sosa - Paraguay"
         },
         {
-          "number": "298",
+          "number": "PAR19",
           "kind": "normal",
-          "label": "Carta 298"
+          "label": "Angel Romero - Paraguay"
         },
         {
-          "number": "299",
-          "kind": "special",
-          "label": "Brilhante/Especial 299"
-        },
-        {
-          "number": "300",
-          "kind": "special",
-          "label": "Brilhante/Especial 300"
+          "number": "PAR20",
+          "kind": "normal",
+          "label": "Antonio Sanabria - Paraguay"
         }
       ]
     },
     {
-      "id": "country-16",
+      "id": "aus",
       "order": 16,
-      "name": "País 16",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "AUS",
+      "name": "Australia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "301",
+          "number": "AUS1",
+          "kind": "golden-special",
+          "label": "Team Logo - Australia"
+        },
+        {
+          "number": "AUS2",
           "kind": "normal",
-          "label": "Carta 301"
+          "label": "Mathew Ryan - Australia"
         },
         {
-          "number": "302",
+          "number": "AUS3",
           "kind": "normal",
-          "label": "Carta 302"
+          "label": "Joe Gauci - Australia"
         },
         {
-          "number": "303",
+          "number": "AUS4",
           "kind": "normal",
-          "label": "Carta 303"
+          "label": "Harry Souttar - Australia"
         },
         {
-          "number": "304",
+          "number": "AUS5",
           "kind": "normal",
-          "label": "Carta 304"
+          "label": "Alessandro Circati - Australia"
         },
         {
-          "number": "305",
+          "number": "AUS6",
           "kind": "normal",
-          "label": "Carta 305"
+          "label": "Jordan Bos - Australia"
         },
         {
-          "number": "306",
+          "number": "AUS7",
           "kind": "normal",
-          "label": "Carta 306"
+          "label": "Aziz Behich - Australia"
         },
         {
-          "number": "307",
+          "number": "AUS8",
           "kind": "normal",
-          "label": "Carta 307"
+          "label": "Cameron Burgess - Australia"
         },
         {
-          "number": "308",
+          "number": "AUS9",
           "kind": "normal",
-          "label": "Carta 308"
+          "label": "Lewis Miller - Australia"
         },
         {
-          "number": "309",
+          "number": "AUS10",
           "kind": "normal",
-          "label": "Carta 309"
+          "label": "Milos Degenek - Australia"
         },
         {
-          "number": "310",
+          "number": "AUS11",
           "kind": "normal",
-          "label": "Carta 310"
+          "label": "Jackson Irvine - Australia"
         },
         {
-          "number": "311",
+          "number": "AUS12",
           "kind": "normal",
-          "label": "Carta 311"
+          "label": "Riley McGree - Australia"
         },
         {
-          "number": "312",
+          "number": "AUS13",
           "kind": "normal",
-          "label": "Carta 312"
+          "label": "Team Photo - Australia"
         },
         {
-          "number": "313",
+          "number": "AUS14",
           "kind": "normal",
-          "label": "Carta 313"
+          "label": "Aiden O'Neill - Australia"
         },
         {
-          "number": "314",
+          "number": "AUS15",
           "kind": "normal",
-          "label": "Carta 314"
+          "label": "Connor Metcalfe - Australia"
         },
         {
-          "number": "315",
+          "number": "AUS16",
           "kind": "normal",
-          "label": "Carta 315"
+          "label": "Patrick Yazbek - Australia"
         },
         {
-          "number": "316",
+          "number": "AUS17",
           "kind": "normal",
-          "label": "Carta 316"
+          "label": "Craig Goodwin - Australia"
         },
         {
-          "number": "317",
+          "number": "AUS18",
           "kind": "normal",
-          "label": "Carta 317"
+          "label": "Kusini Vengi - Australia"
         },
         {
-          "number": "318",
+          "number": "AUS19",
           "kind": "normal",
-          "label": "Carta 318"
+          "label": "Nestory Irankunda - Australia"
         },
         {
-          "number": "319",
-          "kind": "special",
-          "label": "Brilhante/Especial 319"
-        },
-        {
-          "number": "320",
-          "kind": "special",
-          "label": "Brilhante/Especial 320"
+          "number": "AUS20",
+          "kind": "normal",
+          "label": "Mohamed Touré - Australia"
         }
       ]
     },
     {
-      "id": "country-17",
+      "id": "tur",
       "order": 17,
-      "name": "País 17",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "TUR",
+      "name": "Türkiye",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "321",
+          "number": "TUR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Türkiye"
+        },
+        {
+          "number": "TUR2",
           "kind": "normal",
-          "label": "Carta 321"
+          "label": "Ugurcan Cakir - Türkiye"
         },
         {
-          "number": "322",
+          "number": "TUR3",
           "kind": "normal",
-          "label": "Carta 322"
+          "label": "Mert Muldur - Türkiye"
         },
         {
-          "number": "323",
+          "number": "TUR4",
           "kind": "normal",
-          "label": "Carta 323"
+          "label": "Zeki Celik - Türkiye"
         },
         {
-          "number": "324",
+          "number": "TUR5",
           "kind": "normal",
-          "label": "Carta 324"
+          "label": "Abdulkerim Bardakci - Türkiye"
         },
         {
-          "number": "325",
+          "number": "TUR6",
           "kind": "normal",
-          "label": "Carta 325"
+          "label": "Caglar Soyuncu - Türkiye"
         },
         {
-          "number": "326",
+          "number": "TUR7",
           "kind": "normal",
-          "label": "Carta 326"
+          "label": "Merih Demiral - Türkiye"
         },
         {
-          "number": "327",
+          "number": "TUR8",
           "kind": "normal",
-          "label": "Carta 327"
+          "label": "Ferdi Kadioglu - Türkiye"
         },
         {
-          "number": "328",
+          "number": "TUR9",
           "kind": "normal",
-          "label": "Carta 328"
+          "label": "Kaan Ayhan - Türkiye"
         },
         {
-          "number": "329",
+          "number": "TUR10",
           "kind": "normal",
-          "label": "Carta 329"
+          "label": "Ismail Yuksek - Türkiye"
         },
         {
-          "number": "330",
+          "number": "TUR11",
           "kind": "normal",
-          "label": "Carta 330"
+          "label": "Hakan Calhanoglu - Türkiye"
         },
         {
-          "number": "331",
+          "number": "TUR12",
           "kind": "normal",
-          "label": "Carta 331"
+          "label": "Orkun Kokcu - Türkiye"
         },
         {
-          "number": "332",
+          "number": "TUR13",
           "kind": "normal",
-          "label": "Carta 332"
+          "label": "Team Photo - Türkiye"
         },
         {
-          "number": "333",
+          "number": "TUR14",
           "kind": "normal",
-          "label": "Carta 333"
+          "label": "Arda Guler - Türkiye"
         },
         {
-          "number": "334",
+          "number": "TUR15",
           "kind": "normal",
-          "label": "Carta 334"
+          "label": "Irfan Can Kahveci - Türkiye"
         },
         {
-          "number": "335",
+          "number": "TUR16",
           "kind": "normal",
-          "label": "Carta 335"
+          "label": "Yunus Akgun - Türkiye"
         },
         {
-          "number": "336",
+          "number": "TUR17",
           "kind": "normal",
-          "label": "Carta 336"
+          "label": "Can Uzun - Türkiye"
         },
         {
-          "number": "337",
+          "number": "TUR18",
           "kind": "normal",
-          "label": "Carta 337"
+          "label": "Baris Alper Yilmaz - Türkiye"
         },
         {
-          "number": "338",
+          "number": "TUR19",
           "kind": "normal",
-          "label": "Carta 338"
+          "label": "Kerem Akturkoglu - Türkiye"
         },
         {
-          "number": "339",
-          "kind": "special",
-          "label": "Brilhante/Especial 339"
-        },
-        {
-          "number": "340",
-          "kind": "special",
-          "label": "Brilhante/Especial 340"
+          "number": "TUR20",
+          "kind": "normal",
+          "label": "Kenan Yildiz - Türkiye"
         }
       ]
     },
     {
-      "id": "country-18",
+      "id": "ger",
       "order": 18,
-      "name": "País 18",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "GER",
+      "name": "Germany",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "341",
+          "number": "GER1",
+          "kind": "golden-special",
+          "label": "Team Logo - Germany"
+        },
+        {
+          "number": "GER2",
           "kind": "normal",
-          "label": "Carta 341"
+          "label": "Marc-André ter Stegen - Germany"
         },
         {
-          "number": "342",
+          "number": "GER3",
           "kind": "normal",
-          "label": "Carta 342"
+          "label": "Jonathan Tah - Germany"
         },
         {
-          "number": "343",
+          "number": "GER4",
           "kind": "normal",
-          "label": "Carta 343"
+          "label": "David Raum - Germany"
         },
         {
-          "number": "344",
+          "number": "GER5",
           "kind": "normal",
-          "label": "Carta 344"
+          "label": "Nico Schlotterbeck - Germany"
         },
         {
-          "number": "345",
+          "number": "GER6",
           "kind": "normal",
-          "label": "Carta 345"
+          "label": "Antonio Rüdiger - Germany"
         },
         {
-          "number": "346",
+          "number": "GER7",
           "kind": "normal",
-          "label": "Carta 346"
+          "label": "Waldemar Anton - Germany"
         },
         {
-          "number": "347",
+          "number": "GER8",
           "kind": "normal",
-          "label": "Carta 347"
+          "label": "Ridle Baku - Germany"
         },
         {
-          "number": "348",
+          "number": "GER9",
           "kind": "normal",
-          "label": "Carta 348"
+          "label": "Maximilian Mittelstadt - Germany"
         },
         {
-          "number": "349",
+          "number": "GER10",
           "kind": "normal",
-          "label": "Carta 349"
+          "label": "Joshua Kimmich - Germany"
         },
         {
-          "number": "350",
+          "number": "GER11",
           "kind": "normal",
-          "label": "Carta 350"
+          "label": "Florian Wirtz - Germany"
         },
         {
-          "number": "351",
+          "number": "GER12",
           "kind": "normal",
-          "label": "Carta 351"
+          "label": "Felix Nmecha - Germany"
         },
         {
-          "number": "352",
+          "number": "GER13",
           "kind": "normal",
-          "label": "Carta 352"
+          "label": "Team Photo - Germany"
         },
         {
-          "number": "353",
+          "number": "GER14",
           "kind": "normal",
-          "label": "Carta 353"
+          "label": "Leon Goretzka - Germany"
         },
         {
-          "number": "354",
+          "number": "GER15",
           "kind": "normal",
-          "label": "Carta 354"
+          "label": "Jamal Musiala - Germany"
         },
         {
-          "number": "355",
+          "number": "GER16",
           "kind": "normal",
-          "label": "Carta 355"
+          "label": "Serge Gnabry - Germany"
         },
         {
-          "number": "356",
+          "number": "GER17",
           "kind": "normal",
-          "label": "Carta 356"
+          "label": "Kai Havertz - Germany"
         },
         {
-          "number": "357",
+          "number": "GER18",
           "kind": "normal",
-          "label": "Carta 357"
+          "label": "Leroy Sane - Germany"
         },
         {
-          "number": "358",
+          "number": "GER19",
           "kind": "normal",
-          "label": "Carta 358"
+          "label": "Karim Adeyemi - Germany"
         },
         {
-          "number": "359",
-          "kind": "special",
-          "label": "Brilhante/Especial 359"
-        },
-        {
-          "number": "360",
-          "kind": "special",
-          "label": "Brilhante/Especial 360"
+          "number": "GER20",
+          "kind": "normal",
+          "label": "Nick Woltemade - Germany"
         }
       ]
     },
     {
-      "id": "country-19",
+      "id": "cuw",
       "order": 19,
-      "name": "País 19",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CUW",
+      "name": "Curaçao",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "361",
+          "number": "CUW1",
+          "kind": "golden-special",
+          "label": "Team Logo - Curaçao"
+        },
+        {
+          "number": "CUW2",
           "kind": "normal",
-          "label": "Carta 361"
+          "label": "Eloy Room - Curaçao"
         },
         {
-          "number": "362",
+          "number": "CUW3",
           "kind": "normal",
-          "label": "Carta 362"
+          "label": "Armando Obispo - Curaçao"
         },
         {
-          "number": "363",
+          "number": "CUW4",
           "kind": "normal",
-          "label": "Carta 363"
+          "label": "Sherel Floranus - Curaçao"
         },
         {
-          "number": "364",
+          "number": "CUW5",
           "kind": "normal",
-          "label": "Carta 364"
+          "label": "Jurien Gaari - Curaçao"
         },
         {
-          "number": "365",
+          "number": "CUW6",
           "kind": "normal",
-          "label": "Carta 365"
+          "label": "Joshua Brenet - Curaçao"
         },
         {
-          "number": "366",
+          "number": "CUW7",
           "kind": "normal",
-          "label": "Carta 366"
+          "label": "Roshon Van Eijma - Curaçao"
         },
         {
-          "number": "367",
+          "number": "CUW8",
           "kind": "normal",
-          "label": "Carta 367"
+          "label": "Shurandy Sambo - Curaçao"
         },
         {
-          "number": "368",
+          "number": "CUW9",
           "kind": "normal",
-          "label": "Carta 368"
+          "label": "Livano Comenencia - Curaçao"
         },
         {
-          "number": "369",
+          "number": "CUW10",
           "kind": "normal",
-          "label": "Carta 369"
+          "label": "Godfried Roemeratoe - Curaçao"
         },
         {
-          "number": "370",
+          "number": "CUW11",
           "kind": "normal",
-          "label": "Carta 370"
+          "label": "Juninho Bacuna - Curaçao"
         },
         {
-          "number": "371",
+          "number": "CUW12",
           "kind": "normal",
-          "label": "Carta 371"
+          "label": "Leandro Bacuna - Curaçao"
         },
         {
-          "number": "372",
+          "number": "CUW13",
           "kind": "normal",
-          "label": "Carta 372"
+          "label": "Team Photo - Curaçao"
         },
         {
-          "number": "373",
+          "number": "CUW14",
           "kind": "normal",
-          "label": "Carta 373"
+          "label": "Tahith Chong - Curaçao"
         },
         {
-          "number": "374",
+          "number": "CUW15",
           "kind": "normal",
-          "label": "Carta 374"
+          "label": "Kenji Gorre - Curaçao"
         },
         {
-          "number": "375",
+          "number": "CUW16",
           "kind": "normal",
-          "label": "Carta 375"
+          "label": "Jearl Margaritha - Curaçao"
         },
         {
-          "number": "376",
+          "number": "CUW17",
           "kind": "normal",
-          "label": "Carta 376"
+          "label": "Jurgen Locadia - Curaçao"
         },
         {
-          "number": "377",
+          "number": "CUW18",
           "kind": "normal",
-          "label": "Carta 377"
+          "label": "Jeremy Antonisse - Curaçao"
         },
         {
-          "number": "378",
+          "number": "CUW19",
           "kind": "normal",
-          "label": "Carta 378"
+          "label": "Gervane Kastaneer - Curaçao"
         },
         {
-          "number": "379",
-          "kind": "special",
-          "label": "Brilhante/Especial 379"
-        },
-        {
-          "number": "380",
-          "kind": "special",
-          "label": "Brilhante/Especial 380"
+          "number": "CUW20",
+          "kind": "normal",
+          "label": "Sontje Hansen - Curaçao"
         }
       ]
     },
     {
-      "id": "country-20",
+      "id": "civ",
       "order": 20,
-      "name": "País 20",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CIV",
+      "name": "Ivory Coast",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "381",
+          "number": "CIV1",
+          "kind": "golden-special",
+          "label": "Team Logo - Ivory Coast"
+        },
+        {
+          "number": "CIV2",
           "kind": "normal",
-          "label": "Carta 381"
+          "label": "Yahia Fofana - Ivory Coast"
         },
         {
-          "number": "382",
+          "number": "CIV3",
           "kind": "normal",
-          "label": "Carta 382"
+          "label": "Ghislain Konan - Ivory Coast"
         },
         {
-          "number": "383",
+          "number": "CIV4",
           "kind": "normal",
-          "label": "Carta 383"
+          "label": "Wilfried Singo - Ivory Coast"
         },
         {
-          "number": "384",
+          "number": "CIV5",
           "kind": "normal",
-          "label": "Carta 384"
+          "label": "Odilon Kossounou - Ivory Coast"
         },
         {
-          "number": "385",
+          "number": "CIV6",
           "kind": "normal",
-          "label": "Carta 385"
+          "label": "Evan Ndicka - Ivory Coast"
         },
         {
-          "number": "386",
+          "number": "CIV7",
           "kind": "normal",
-          "label": "Carta 386"
+          "label": "Willy Boly - Ivory Coast"
         },
         {
-          "number": "387",
+          "number": "CIV8",
           "kind": "normal",
-          "label": "Carta 387"
+          "label": "Emmanuel Agbadou - Ivory Coast"
         },
         {
-          "number": "388",
+          "number": "CIV9",
           "kind": "normal",
-          "label": "Carta 388"
+          "label": "Ousmane Diomande - Ivory Coast"
         },
         {
-          "number": "389",
+          "number": "CIV10",
           "kind": "normal",
-          "label": "Carta 389"
+          "label": "Franck Kessie - Ivory Coast"
         },
         {
-          "number": "390",
+          "number": "CIV11",
           "kind": "normal",
-          "label": "Carta 390"
+          "label": "Seko Fofana - Ivory Coast"
         },
         {
-          "number": "391",
+          "number": "CIV12",
           "kind": "normal",
-          "label": "Carta 391"
+          "label": "Ibrahim Sangare - Ivory Coast"
         },
         {
-          "number": "392",
+          "number": "CIV13",
           "kind": "normal",
-          "label": "Carta 392"
+          "label": "Team Photo - Ivory Coast"
         },
         {
-          "number": "393",
+          "number": "CIV14",
           "kind": "normal",
-          "label": "Carta 393"
+          "label": "Jean-Philippe Gbamin - Ivory Coast"
         },
         {
-          "number": "394",
+          "number": "CIV15",
           "kind": "normal",
-          "label": "Carta 394"
+          "label": "Amad Diallo - Ivory Coast"
         },
         {
-          "number": "395",
+          "number": "CIV16",
           "kind": "normal",
-          "label": "Carta 395"
+          "label": "Sébastien Haller - Ivory Coast"
         },
         {
-          "number": "396",
+          "number": "CIV17",
           "kind": "normal",
-          "label": "Carta 396"
+          "label": "Simon Adingra - Ivory Coast"
         },
         {
-          "number": "397",
+          "number": "CIV18",
           "kind": "normal",
-          "label": "Carta 397"
+          "label": "Yan Diomande - Ivory Coast"
         },
         {
-          "number": "398",
+          "number": "CIV19",
           "kind": "normal",
-          "label": "Carta 398"
+          "label": "Evann Guessand - Ivory Coast"
         },
         {
-          "number": "399",
-          "kind": "special",
-          "label": "Brilhante/Especial 399"
-        },
-        {
-          "number": "400",
-          "kind": "special",
-          "label": "Brilhante/Especial 400"
+          "number": "CIV20",
+          "kind": "normal",
+          "label": "Oumar Diakite - Ivory Coast"
         }
       ]
     },
     {
-      "id": "country-21",
+      "id": "ecu",
       "order": 21,
-      "name": "País 21",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "ECU",
+      "name": "Ecuador",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "401",
+          "number": "ECU1",
+          "kind": "golden-special",
+          "label": "Team Logo - Ecuador"
+        },
+        {
+          "number": "ECU2",
           "kind": "normal",
-          "label": "Carta 401"
+          "label": "Hernán Galíndez - Ecuador"
         },
         {
-          "number": "402",
+          "number": "ECU3",
           "kind": "normal",
-          "label": "Carta 402"
+          "label": "Gonzalo Valle - Ecuador"
         },
         {
-          "number": "403",
+          "number": "ECU4",
           "kind": "normal",
-          "label": "Carta 403"
+          "label": "Piero Hincapié - Ecuador"
         },
         {
-          "number": "404",
+          "number": "ECU5",
           "kind": "normal",
-          "label": "Carta 404"
+          "label": "Pervis Estupiñán - Ecuador"
         },
         {
-          "number": "405",
+          "number": "ECU6",
           "kind": "normal",
-          "label": "Carta 405"
+          "label": "Willian Pacho - Ecuador"
         },
         {
-          "number": "406",
+          "number": "ECU7",
           "kind": "normal",
-          "label": "Carta 406"
+          "label": "Ángelo Preciado - Ecuador"
         },
         {
-          "number": "407",
+          "number": "ECU8",
           "kind": "normal",
-          "label": "Carta 407"
+          "label": "Joel Ordóñez - Ecuador"
         },
         {
-          "number": "408",
+          "number": "ECU9",
           "kind": "normal",
-          "label": "Carta 408"
+          "label": "Moises Caicedo - Ecuador"
         },
         {
-          "number": "409",
+          "number": "ECU10",
           "kind": "normal",
-          "label": "Carta 409"
+          "label": "Alan Franco - Ecuador"
         },
         {
-          "number": "410",
+          "number": "ECU11",
           "kind": "normal",
-          "label": "Carta 410"
+          "label": "Kendry Paez - Ecuador"
         },
         {
-          "number": "411",
+          "number": "ECU12",
           "kind": "normal",
-          "label": "Carta 411"
+          "label": "Pedro Vite - Ecuador"
         },
         {
-          "number": "412",
+          "number": "ECU13",
           "kind": "normal",
-          "label": "Carta 412"
+          "label": "Team Photo - Ecuador"
         },
         {
-          "number": "413",
+          "number": "ECU14",
           "kind": "normal",
-          "label": "Carta 413"
+          "label": "John Veboah - Ecuador"
         },
         {
-          "number": "414",
+          "number": "ECU15",
           "kind": "normal",
-          "label": "Carta 414"
+          "label": "Leonardo Campana - Ecuador"
         },
         {
-          "number": "415",
+          "number": "ECU16",
           "kind": "normal",
-          "label": "Carta 415"
+          "label": "Gonzalo Plata - Ecuador"
         },
         {
-          "number": "416",
+          "number": "ECU17",
           "kind": "normal",
-          "label": "Carta 416"
+          "label": "Nilson Angulo - Ecuador"
         },
         {
-          "number": "417",
+          "number": "ECU18",
           "kind": "normal",
-          "label": "Carta 417"
+          "label": "Alan Minda - Ecuador"
         },
         {
-          "number": "418",
+          "number": "ECU19",
           "kind": "normal",
-          "label": "Carta 418"
+          "label": "Kevin Rodriguez - Ecuador"
         },
         {
-          "number": "419",
-          "kind": "special",
-          "label": "Brilhante/Especial 419"
-        },
-        {
-          "number": "420",
-          "kind": "special",
-          "label": "Brilhante/Especial 420"
+          "number": "ECU20",
+          "kind": "normal",
+          "label": "Enner Valencia - Ecuador"
         }
       ]
     },
     {
-      "id": "country-22",
+      "id": "ned",
       "order": 22,
-      "name": "País 22",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "NED",
+      "name": "Netherlands",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "421",
+          "number": "NED1",
+          "kind": "golden-special",
+          "label": "Team Logo - Netherlands"
+        },
+        {
+          "number": "NED2",
           "kind": "normal",
-          "label": "Carta 421"
+          "label": "Bart Verbruggen - Netherlands"
         },
         {
-          "number": "422",
+          "number": "NED3",
           "kind": "normal",
-          "label": "Carta 422"
+          "label": "Virgil van Dijk - Netherlands"
         },
         {
-          "number": "423",
+          "number": "NED4",
           "kind": "normal",
-          "label": "Carta 423"
+          "label": "Micky van de Ven - Netherlands"
         },
         {
-          "number": "424",
+          "number": "NED5",
           "kind": "normal",
-          "label": "Carta 424"
+          "label": "Jurrien Timber - Netherlands"
         },
         {
-          "number": "425",
+          "number": "NED6",
           "kind": "normal",
-          "label": "Carta 425"
+          "label": "Denzel Dumfries - Netherlands"
         },
         {
-          "number": "426",
+          "number": "NED7",
           "kind": "normal",
-          "label": "Carta 426"
+          "label": "Nathan Aké - Netherlands"
         },
         {
-          "number": "427",
+          "number": "NED8",
           "kind": "normal",
-          "label": "Carta 427"
+          "label": "Jeremie Frimpong - Netherlands"
         },
         {
-          "number": "428",
+          "number": "NED9",
           "kind": "normal",
-          "label": "Carta 428"
+          "label": "Jan Paul van Hecke - Netherlands"
         },
         {
-          "number": "429",
+          "number": "NED10",
           "kind": "normal",
-          "label": "Carta 429"
+          "label": "Tijjani Reijnders - Netherlands"
         },
         {
-          "number": "430",
+          "number": "NED11",
           "kind": "normal",
-          "label": "Carta 430"
+          "label": "Ryan Gravenberch - Netherlands"
         },
         {
-          "number": "431",
+          "number": "NED12",
           "kind": "normal",
-          "label": "Carta 431"
+          "label": "Teun Koopmeiners - Netherlands"
         },
         {
-          "number": "432",
+          "number": "NED13",
           "kind": "normal",
-          "label": "Carta 432"
+          "label": "Team Photo - Netherlands"
         },
         {
-          "number": "433",
+          "number": "NED14",
           "kind": "normal",
-          "label": "Carta 433"
+          "label": "Frenkie de Jong - Netherlands"
         },
         {
-          "number": "434",
+          "number": "NED15",
           "kind": "normal",
-          "label": "Carta 434"
+          "label": "Xavi Simons - Netherlands"
         },
         {
-          "number": "435",
+          "number": "NED16",
           "kind": "normal",
-          "label": "Carta 435"
+          "label": "Justin Kluivert - Netherlands"
         },
         {
-          "number": "436",
+          "number": "NED17",
           "kind": "normal",
-          "label": "Carta 436"
+          "label": "Memphis Depay - Netherlands"
         },
         {
-          "number": "437",
+          "number": "NED18",
           "kind": "normal",
-          "label": "Carta 437"
+          "label": "Donyell Malen - Netherlands"
         },
         {
-          "number": "438",
+          "number": "NED19",
           "kind": "normal",
-          "label": "Carta 438"
+          "label": "Wout Weghorst - Netherlands"
         },
         {
-          "number": "439",
-          "kind": "special",
-          "label": "Brilhante/Especial 439"
-        },
-        {
-          "number": "440",
-          "kind": "special",
-          "label": "Brilhante/Especial 440"
+          "number": "NED20",
+          "kind": "normal",
+          "label": "Cody Gakpo - Netherlands"
         }
       ]
     },
     {
-      "id": "country-23",
+      "id": "jpn",
       "order": 23,
-      "name": "País 23",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "JPN",
+      "name": "Japan",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "441",
+          "number": "JPN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Japan"
+        },
+        {
+          "number": "JPN2",
           "kind": "normal",
-          "label": "Carta 441"
+          "label": "Zion Suzuki - Japan"
         },
         {
-          "number": "442",
+          "number": "JPN3",
           "kind": "normal",
-          "label": "Carta 442"
+          "label": "Henry Heroki Mochizuki - Japan"
         },
         {
-          "number": "443",
+          "number": "JPN4",
           "kind": "normal",
-          "label": "Carta 443"
+          "label": "Ayumu Seko - Japan"
         },
         {
-          "number": "444",
+          "number": "JPN5",
           "kind": "normal",
-          "label": "Carta 444"
+          "label": "Junnosuke Suzuki - Japan"
         },
         {
-          "number": "445",
+          "number": "JPN6",
           "kind": "normal",
-          "label": "Carta 445"
+          "label": "Shogo Taniguchi - Japan"
         },
         {
-          "number": "446",
+          "number": "JPN7",
           "kind": "normal",
-          "label": "Carta 446"
+          "label": "Tsuyoshi Watanabe - Japan"
         },
         {
-          "number": "447",
+          "number": "JPN8",
           "kind": "normal",
-          "label": "Carta 447"
+          "label": "Kaishu Sano - Japan"
         },
         {
-          "number": "448",
+          "number": "JPN9",
           "kind": "normal",
-          "label": "Carta 448"
+          "label": "Yuki Soma - Japan"
         },
         {
-          "number": "449",
+          "number": "JPN10",
           "kind": "normal",
-          "label": "Carta 449"
+          "label": "Ao Tanaka - Japan"
         },
         {
-          "number": "450",
+          "number": "JPN11",
           "kind": "normal",
-          "label": "Carta 450"
+          "label": "Daichi Kamada - Japan"
         },
         {
-          "number": "451",
+          "number": "JPN12",
           "kind": "normal",
-          "label": "Carta 451"
+          "label": "Takefusa Kubo - Japan"
         },
         {
-          "number": "452",
+          "number": "JPN13",
           "kind": "normal",
-          "label": "Carta 452"
+          "label": "Team Photo - Japan"
         },
         {
-          "number": "453",
+          "number": "JPN14",
           "kind": "normal",
-          "label": "Carta 453"
+          "label": "Ritsu Doan - Japan"
         },
         {
-          "number": "454",
+          "number": "JPN15",
           "kind": "normal",
-          "label": "Carta 454"
+          "label": "Keito Nakamura - Japan"
         },
         {
-          "number": "455",
+          "number": "JPN16",
           "kind": "normal",
-          "label": "Carta 455"
+          "label": "Takumi Minamino - Japan"
         },
         {
-          "number": "456",
+          "number": "JPN17",
           "kind": "normal",
-          "label": "Carta 456"
+          "label": "Shuto Machino - Japan"
         },
         {
-          "number": "457",
+          "number": "JPN18",
           "kind": "normal",
-          "label": "Carta 457"
+          "label": "Junya Ito - Japan"
         },
         {
-          "number": "458",
+          "number": "JPN19",
           "kind": "normal",
-          "label": "Carta 458"
+          "label": "Koki Ogawa - Japan"
         },
         {
-          "number": "459",
-          "kind": "special",
-          "label": "Brilhante/Especial 459"
-        },
-        {
-          "number": "460",
-          "kind": "special",
-          "label": "Brilhante/Especial 460"
+          "number": "JPN20",
+          "kind": "normal",
+          "label": "Ayase Ueda - Japan"
         }
       ]
     },
     {
-      "id": "country-24",
+      "id": "swe",
       "order": 24,
-      "name": "País 24",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "SWE",
+      "name": "Sweden",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "461",
+          "number": "SWE1",
+          "kind": "golden-special",
+          "label": "Team Logo - Sweden"
+        },
+        {
+          "number": "SWE2",
           "kind": "normal",
-          "label": "Carta 461"
+          "label": "Victor Johansson - Sweden"
         },
         {
-          "number": "462",
+          "number": "SWE3",
           "kind": "normal",
-          "label": "Carta 462"
+          "label": "Isak Hien - Sweden"
         },
         {
-          "number": "463",
+          "number": "SWE4",
           "kind": "normal",
-          "label": "Carta 463"
+          "label": "Gabriel Gudmundsson - Sweden"
         },
         {
-          "number": "464",
+          "number": "SWE5",
           "kind": "normal",
-          "label": "Carta 464"
+          "label": "Emil Holm - Sweden"
         },
         {
-          "number": "465",
+          "number": "SWE6",
           "kind": "normal",
-          "label": "Carta 465"
+          "label": "Victor Nilsson Lindelöf - Sweden"
         },
         {
-          "number": "466",
+          "number": "SWE7",
           "kind": "normal",
-          "label": "Carta 466"
+          "label": "Gustaf Lagerbielke - Sweden"
         },
         {
-          "number": "467",
+          "number": "SWE8",
           "kind": "normal",
-          "label": "Carta 467"
+          "label": "Lucas Bergvall - Sweden"
         },
         {
-          "number": "468",
+          "number": "SWE9",
           "kind": "normal",
-          "label": "Carta 468"
+          "label": "Hugo Larsson - Sweden"
         },
         {
-          "number": "469",
+          "number": "SWE10",
           "kind": "normal",
-          "label": "Carta 469"
+          "label": "Jesper Karlström - Sweden"
         },
         {
-          "number": "470",
+          "number": "SWE11",
           "kind": "normal",
-          "label": "Carta 470"
+          "label": "Yasin Ayari - Sweden"
         },
         {
-          "number": "471",
+          "number": "SWE12",
           "kind": "normal",
-          "label": "Carta 471"
+          "label": "Mattias Svanberg - Sweden"
         },
         {
-          "number": "472",
+          "number": "SWE13",
           "kind": "normal",
-          "label": "Carta 472"
+          "label": "Team Photo - Sweden"
         },
         {
-          "number": "473",
+          "number": "SWE14",
           "kind": "normal",
-          "label": "Carta 473"
+          "label": "Daniel Svensson - Sweden"
         },
         {
-          "number": "474",
+          "number": "SWE15",
           "kind": "normal",
-          "label": "Carta 474"
+          "label": "Ken Sema - Sweden"
         },
         {
-          "number": "475",
+          "number": "SWE16",
           "kind": "normal",
-          "label": "Carta 475"
+          "label": "Roony Bardghji - Sweden"
         },
         {
-          "number": "476",
+          "number": "SWE17",
           "kind": "normal",
-          "label": "Carta 476"
+          "label": "Dejan Kulusevski - Sweden"
         },
         {
-          "number": "477",
+          "number": "SWE18",
           "kind": "normal",
-          "label": "Carta 477"
+          "label": "Anthony Elanga - Sweden"
         },
         {
-          "number": "478",
+          "number": "SWE19",
           "kind": "normal",
-          "label": "Carta 478"
+          "label": "Alexander Isak - Sweden"
         },
         {
-          "number": "479",
-          "kind": "special",
-          "label": "Brilhante/Especial 479"
-        },
-        {
-          "number": "480",
-          "kind": "special",
-          "label": "Brilhante/Especial 480"
+          "number": "SWE20",
+          "kind": "normal",
+          "label": "Viktor Gyökeres - Sweden"
         }
       ]
     },
     {
-      "id": "country-25",
+      "id": "tun",
       "order": 25,
-      "name": "País 25",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "TUN",
+      "name": "Tunisia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "481",
+          "number": "TUN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Tunisia"
+        },
+        {
+          "number": "TUN2",
           "kind": "normal",
-          "label": "Carta 481"
+          "label": "Bechir Ben Said - Tunisia"
         },
         {
-          "number": "482",
+          "number": "TUN3",
           "kind": "normal",
-          "label": "Carta 482"
+          "label": "Aymen Dahmen - Tunisia"
         },
         {
-          "number": "483",
+          "number": "TUN4",
           "kind": "normal",
-          "label": "Carta 483"
+          "label": "Yan Valery - Tunisia"
         },
         {
-          "number": "484",
+          "number": "TUN5",
           "kind": "normal",
-          "label": "Carta 484"
+          "label": "Montassar Talbi - Tunisia"
         },
         {
-          "number": "485",
+          "number": "TUN6",
           "kind": "normal",
-          "label": "Carta 485"
+          "label": "Yassine Meriah - Tunisia"
         },
         {
-          "number": "486",
+          "number": "TUN7",
           "kind": "normal",
-          "label": "Carta 486"
+          "label": "Ali Abdi - Tunisia"
         },
         {
-          "number": "487",
+          "number": "TUN8",
           "kind": "normal",
-          "label": "Carta 487"
+          "label": "Dylan Bronn - Tunisia"
         },
         {
-          "number": "488",
+          "number": "TUN9",
           "kind": "normal",
-          "label": "Carta 488"
+          "label": "Ellyes Skhiri - Tunisia"
         },
         {
-          "number": "489",
+          "number": "TUN10",
           "kind": "normal",
-          "label": "Carta 489"
+          "label": "Aissa Laidouni - Tunisia"
         },
         {
-          "number": "490",
+          "number": "TUN11",
           "kind": "normal",
-          "label": "Carta 490"
+          "label": "Ferjani Sassi - Tunisia"
         },
         {
-          "number": "491",
+          "number": "TUN12",
           "kind": "normal",
-          "label": "Carta 491"
+          "label": "Mohamed Ali Ben Romdhane - Tunisia"
         },
         {
-          "number": "492",
+          "number": "TUN13",
           "kind": "normal",
-          "label": "Carta 492"
+          "label": "Team Photo - Tunisia"
         },
         {
-          "number": "493",
+          "number": "TUN14",
           "kind": "normal",
-          "label": "Carta 493"
+          "label": "Hannibal Mejbri - Tunisia"
         },
         {
-          "number": "494",
+          "number": "TUN15",
           "kind": "normal",
-          "label": "Carta 494"
+          "label": "Elias Achouri - Tunisia"
         },
         {
-          "number": "495",
+          "number": "TUN16",
           "kind": "normal",
-          "label": "Carta 495"
+          "label": "Elias Saad - Tunisia"
         },
         {
-          "number": "496",
+          "number": "TUN17",
           "kind": "normal",
-          "label": "Carta 496"
+          "label": "Hazem Mastouri - Tunisia"
         },
         {
-          "number": "497",
+          "number": "TUN18",
           "kind": "normal",
-          "label": "Carta 497"
+          "label": "Ismael Gharbi - Tunisia"
         },
         {
-          "number": "498",
+          "number": "TUN19",
           "kind": "normal",
-          "label": "Carta 498"
+          "label": "Sayfallah Ltaief - Tunisia"
         },
         {
-          "number": "499",
-          "kind": "special",
-          "label": "Brilhante/Especial 499"
-        },
-        {
-          "number": "500",
-          "kind": "special",
-          "label": "Brilhante/Especial 500"
+          "number": "TUN20",
+          "kind": "normal",
+          "label": "Naim Sliti - Tunisia"
         }
       ]
     },
     {
-      "id": "country-26",
+      "id": "bel",
       "order": 26,
-      "name": "País 26",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "BEL",
+      "name": "Belgium",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "501",
+          "number": "BEL1",
+          "kind": "golden-special",
+          "label": "Team Logo - Belgium"
+        },
+        {
+          "number": "BEL2",
           "kind": "normal",
-          "label": "Carta 501"
+          "label": "Thibaut Courtois - Belgium"
         },
         {
-          "number": "502",
+          "number": "BEL3",
           "kind": "normal",
-          "label": "Carta 502"
+          "label": "Arthur Theate - Belgium"
         },
         {
-          "number": "503",
+          "number": "BEL4",
           "kind": "normal",
-          "label": "Carta 503"
+          "label": "Timothy Castagne - Belgium"
         },
         {
-          "number": "504",
+          "number": "BEL5",
           "kind": "normal",
-          "label": "Carta 504"
+          "label": "Zeno Debast - Belgium"
         },
         {
-          "number": "505",
+          "number": "BEL6",
           "kind": "normal",
-          "label": "Carta 505"
+          "label": "Brandon Mechele - Belgium"
         },
         {
-          "number": "506",
+          "number": "BEL7",
           "kind": "normal",
-          "label": "Carta 506"
+          "label": "Maxim De Cuyper - Belgium"
         },
         {
-          "number": "507",
+          "number": "BEL8",
           "kind": "normal",
-          "label": "Carta 507"
+          "label": "Thomas Meunier - Belgium"
         },
         {
-          "number": "508",
+          "number": "BEL9",
           "kind": "normal",
-          "label": "Carta 508"
+          "label": "Youri Tielemans - Belgium"
         },
         {
-          "number": "509",
+          "number": "BEL10",
           "kind": "normal",
-          "label": "Carta 509"
+          "label": "Amadou Onana - Belgium"
         },
         {
-          "number": "510",
+          "number": "BEL11",
           "kind": "normal",
-          "label": "Carta 510"
+          "label": "Nicolas Raskin - Belgium"
         },
         {
-          "number": "511",
+          "number": "BEL12",
           "kind": "normal",
-          "label": "Carta 511"
+          "label": "Alexis Saelemaekers - Belgium"
         },
         {
-          "number": "512",
+          "number": "BEL13",
           "kind": "normal",
-          "label": "Carta 512"
+          "label": "Team Photo - Belgium"
         },
         {
-          "number": "513",
+          "number": "BEL14",
           "kind": "normal",
-          "label": "Carta 513"
+          "label": "Hans Vanaken - Belgium"
         },
         {
-          "number": "514",
+          "number": "BEL15",
           "kind": "normal",
-          "label": "Carta 514"
+          "label": "Kevin De Bruyne - Belgium"
         },
         {
-          "number": "515",
+          "number": "BEL16",
           "kind": "normal",
-          "label": "Carta 515"
+          "label": "Jérémy Doku - Belgium"
         },
         {
-          "number": "516",
+          "number": "BEL17",
           "kind": "normal",
-          "label": "Carta 516"
+          "label": "Charles De Ketelaere - Belgium"
         },
         {
-          "number": "517",
+          "number": "BEL18",
           "kind": "normal",
-          "label": "Carta 517"
+          "label": "Leandro Trossard - Belgium"
         },
         {
-          "number": "518",
+          "number": "BEL19",
           "kind": "normal",
-          "label": "Carta 518"
+          "label": "Loïs Openda - Belgium"
         },
         {
-          "number": "519",
-          "kind": "special",
-          "label": "Brilhante/Especial 519"
-        },
-        {
-          "number": "520",
-          "kind": "special",
-          "label": "Brilhante/Especial 520"
+          "number": "BEL20",
+          "kind": "normal",
+          "label": "Romelu Lukaku - Belgium"
         }
       ]
     },
     {
-      "id": "country-27",
+      "id": "egy",
       "order": 27,
-      "name": "País 27",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "EGY",
+      "name": "Egypt",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "521",
+          "number": "EGY1",
+          "kind": "golden-special",
+          "label": "Team Logo - Egypt"
+        },
+        {
+          "number": "EGY2",
           "kind": "normal",
-          "label": "Carta 521"
+          "label": "Mohamed El Shenawy - Egypt"
         },
         {
-          "number": "522",
+          "number": "EGY3",
           "kind": "normal",
-          "label": "Carta 522"
+          "label": "Mohamed Hany - Egypt"
         },
         {
-          "number": "523",
+          "number": "EGY4",
           "kind": "normal",
-          "label": "Carta 523"
+          "label": "Mohamed Hamdy - Egypt"
         },
         {
-          "number": "524",
+          "number": "EGY5",
           "kind": "normal",
-          "label": "Carta 524"
+          "label": "Yasser Ibrahim - Egypt"
         },
         {
-          "number": "525",
+          "number": "EGY6",
           "kind": "normal",
-          "label": "Carta 525"
+          "label": "Khaled Sobhi - Egypt"
         },
         {
-          "number": "526",
+          "number": "EGY7",
           "kind": "normal",
-          "label": "Carta 526"
+          "label": "Ramy Rabia - Egypt"
         },
         {
-          "number": "527",
+          "number": "EGY8",
           "kind": "normal",
-          "label": "Carta 527"
+          "label": "Hossam Abdelmaguid - Egypt"
         },
         {
-          "number": "528",
+          "number": "EGY9",
           "kind": "normal",
-          "label": "Carta 528"
+          "label": "Ahmed Fatouh - Egypt"
         },
         {
-          "number": "529",
+          "number": "EGY10",
           "kind": "normal",
-          "label": "Carta 529"
+          "label": "Marwan Attia - Egypt"
         },
         {
-          "number": "530",
+          "number": "EGY11",
           "kind": "normal",
-          "label": "Carta 530"
+          "label": "Zizo - Egypt"
         },
         {
-          "number": "531",
+          "number": "EGY12",
           "kind": "normal",
-          "label": "Carta 531"
+          "label": "Hamdy Fathy - Egypt"
         },
         {
-          "number": "532",
+          "number": "EGY13",
           "kind": "normal",
-          "label": "Carta 532"
+          "label": "Team Photo - Egypt"
         },
         {
-          "number": "533",
+          "number": "EGY14",
           "kind": "normal",
-          "label": "Carta 533"
+          "label": "Mohamed Lasheen - Egypt"
         },
         {
-          "number": "534",
+          "number": "EGY15",
           "kind": "normal",
-          "label": "Carta 534"
+          "label": "Emam Ashour - Egypt"
         },
         {
-          "number": "535",
+          "number": "EGY16",
           "kind": "normal",
-          "label": "Carta 535"
+          "label": "Osama Faisal - Egypt"
         },
         {
-          "number": "536",
+          "number": "EGY17",
           "kind": "normal",
-          "label": "Carta 536"
+          "label": "Mohamed Salah - Egypt"
         },
         {
-          "number": "537",
+          "number": "EGY18",
           "kind": "normal",
-          "label": "Carta 537"
+          "label": "Mostafa Mohamed - Egypt"
         },
         {
-          "number": "538",
+          "number": "EGY19",
           "kind": "normal",
-          "label": "Carta 538"
+          "label": "Trezeguet - Egypt"
         },
         {
-          "number": "539",
-          "kind": "special",
-          "label": "Brilhante/Especial 539"
-        },
-        {
-          "number": "540",
-          "kind": "special",
-          "label": "Brilhante/Especial 540"
+          "number": "EGY20",
+          "kind": "normal",
+          "label": "Omar Marmoush - Egypt"
         }
       ]
     },
     {
-      "id": "country-28",
+      "id": "irn",
       "order": 28,
-      "name": "País 28",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "IRN",
+      "name": "Iran",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "541",
+          "number": "IRN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Iran"
+        },
+        {
+          "number": "IRN2",
           "kind": "normal",
-          "label": "Carta 541"
+          "label": "Alireza Beiranvand - Iran"
         },
         {
-          "number": "542",
+          "number": "IRN3",
           "kind": "normal",
-          "label": "Carta 542"
+          "label": "Morteza Pouraliganji - Iran"
         },
         {
-          "number": "543",
+          "number": "IRN4",
           "kind": "normal",
-          "label": "Carta 543"
+          "label": "Ehsan Hajsafi - Iran"
         },
         {
-          "number": "544",
+          "number": "IRN5",
           "kind": "normal",
-          "label": "Carta 544"
+          "label": "Milad Mohammadi - Iran"
         },
         {
-          "number": "545",
+          "number": "IRN6",
           "kind": "normal",
-          "label": "Carta 545"
+          "label": "Shojae Khalilzadeh - Iran"
         },
         {
-          "number": "546",
+          "number": "IRN7",
           "kind": "normal",
-          "label": "Carta 546"
+          "label": "Ramin Rezaeian - Iran"
         },
         {
-          "number": "547",
+          "number": "IRN8",
           "kind": "normal",
-          "label": "Carta 547"
+          "label": "Hossein Kanaani - Iran"
         },
         {
-          "number": "548",
+          "number": "IRN9",
           "kind": "normal",
-          "label": "Carta 548"
+          "label": "Sadegh Moharrami - Iran"
         },
         {
-          "number": "549",
+          "number": "IRN10",
           "kind": "normal",
-          "label": "Carta 549"
+          "label": "Saleh Hardani - Iran"
         },
         {
-          "number": "550",
+          "number": "IRN11",
           "kind": "normal",
-          "label": "Carta 550"
+          "label": "Saeed Ezatolahi - Iran"
         },
         {
-          "number": "551",
+          "number": "IRN12",
           "kind": "normal",
-          "label": "Carta 551"
+          "label": "Saman Ghoddos - Iran"
         },
         {
-          "number": "552",
+          "number": "IRN13",
           "kind": "normal",
-          "label": "Carta 552"
+          "label": "Team Photo - Iran"
         },
         {
-          "number": "553",
+          "number": "IRN14",
           "kind": "normal",
-          "label": "Carta 553"
+          "label": "Omid Noorafkan - Iran"
         },
         {
-          "number": "554",
+          "number": "IRN15",
           "kind": "normal",
-          "label": "Carta 554"
+          "label": "Roozbeh Cheshmi - Iran"
         },
         {
-          "number": "555",
+          "number": "IRN16",
           "kind": "normal",
-          "label": "Carta 555"
+          "label": "Mohammad Mohebi - Iran"
         },
         {
-          "number": "556",
+          "number": "IRN17",
           "kind": "normal",
-          "label": "Carta 556"
+          "label": "Sardar Azmoun - Iran"
         },
         {
-          "number": "557",
+          "number": "IRN18",
           "kind": "normal",
-          "label": "Carta 557"
+          "label": "Mehdi Taremi - Iran"
         },
         {
-          "number": "558",
+          "number": "IRN19",
           "kind": "normal",
-          "label": "Carta 558"
+          "label": "Alireza Jahanbakhsh - Iran"
         },
         {
-          "number": "559",
-          "kind": "special",
-          "label": "Brilhante/Especial 559"
-        },
-        {
-          "number": "560",
-          "kind": "special",
-          "label": "Brilhante/Especial 560"
+          "number": "IRN20",
+          "kind": "normal",
+          "label": "Ali Gholizadeh - Iran"
         }
       ]
     },
     {
-      "id": "country-29",
+      "id": "nzl",
       "order": 29,
-      "name": "País 29",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "NZL",
+      "name": "New Zealand",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "561",
+          "number": "NZL1",
+          "kind": "golden-special",
+          "label": "Team Logo - New Zealand"
+        },
+        {
+          "number": "NZL2",
           "kind": "normal",
-          "label": "Carta 561"
+          "label": "Max Crocombe Payne - New Zealand"
         },
         {
-          "number": "562",
+          "number": "NZL3",
           "kind": "normal",
-          "label": "Carta 562"
+          "label": "Alex Paulsen - New Zealand"
         },
         {
-          "number": "563",
+          "number": "NZL4",
           "kind": "normal",
-          "label": "Carta 563"
+          "label": "Michael Boxall - New Zealand"
         },
         {
-          "number": "564",
+          "number": "NZL5",
           "kind": "normal",
-          "label": "Carta 564"
+          "label": "Liberato Cacace - New Zealand"
         },
         {
-          "number": "565",
+          "number": "NZL6",
           "kind": "normal",
-          "label": "Carta 565"
+          "label": "Tim Payne - New Zealand"
         },
         {
-          "number": "566",
+          "number": "NZL7",
           "kind": "normal",
-          "label": "Carta 566"
+          "label": "Tyler Bindon - New Zealand"
         },
         {
-          "number": "567",
+          "number": "NZL8",
           "kind": "normal",
-          "label": "Carta 567"
+          "label": "Francis de Vries - New Zealand"
         },
         {
-          "number": "568",
+          "number": "NZL9",
           "kind": "normal",
-          "label": "Carta 568"
+          "label": "Finn Surman - New Zealand"
         },
         {
-          "number": "569",
+          "number": "NZL10",
           "kind": "normal",
-          "label": "Carta 569"
+          "label": "Joe Bell - New Zealand"
         },
         {
-          "number": "570",
+          "number": "NZL11",
           "kind": "normal",
-          "label": "Carta 570"
+          "label": "Sarpreet Singh - New Zealand"
         },
         {
-          "number": "571",
+          "number": "NZL12",
           "kind": "normal",
-          "label": "Carta 571"
+          "label": "Ryan Thomas - New Zealand"
         },
         {
-          "number": "572",
+          "number": "NZL13",
           "kind": "normal",
-          "label": "Carta 572"
+          "label": "Team Photo - New Zealand"
         },
         {
-          "number": "573",
+          "number": "NZL14",
           "kind": "normal",
-          "label": "Carta 573"
+          "label": "Matthew Garbett - New Zealand"
         },
         {
-          "number": "574",
+          "number": "NZL15",
           "kind": "normal",
-          "label": "Carta 574"
+          "label": "Marko Stamenić - New Zealand"
         },
         {
-          "number": "575",
+          "number": "NZL16",
           "kind": "normal",
-          "label": "Carta 575"
+          "label": "Ben Old - New Zealand"
         },
         {
-          "number": "576",
+          "number": "NZL17",
           "kind": "normal",
-          "label": "Carta 576"
+          "label": "Chris Wood - New Zealand"
         },
         {
-          "number": "577",
+          "number": "NZL18",
           "kind": "normal",
-          "label": "Carta 577"
+          "label": "Elijah Just - New Zealand"
         },
         {
-          "number": "578",
+          "number": "NZL19",
           "kind": "normal",
-          "label": "Carta 578"
+          "label": "Callum McCowatt - New Zealand"
         },
         {
-          "number": "579",
-          "kind": "special",
-          "label": "Brilhante/Especial 579"
-        },
-        {
-          "number": "580",
-          "kind": "special",
-          "label": "Brilhante/Especial 580"
+          "number": "NZL20",
+          "kind": "normal",
+          "label": "Kosta Barbarouses - New Zealand"
         }
       ]
     },
     {
-      "id": "country-30",
+      "id": "esp",
       "order": 30,
-      "name": "País 30",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "ESP",
+      "name": "Spain",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "581",
+          "number": "ESP1",
+          "kind": "golden-special",
+          "label": "Team Logo - Spain"
+        },
+        {
+          "number": "ESP2",
           "kind": "normal",
-          "label": "Carta 581"
+          "label": "Unai Simon - Spain"
         },
         {
-          "number": "582",
+          "number": "ESP3",
           "kind": "normal",
-          "label": "Carta 582"
+          "label": "Robin Le Normand - Spain"
         },
         {
-          "number": "583",
+          "number": "ESP4",
           "kind": "normal",
-          "label": "Carta 583"
+          "label": "Aymeric Laporte - Spain"
         },
         {
-          "number": "584",
+          "number": "ESP5",
           "kind": "normal",
-          "label": "Carta 584"
+          "label": "Dean Huijsen - Spain"
         },
         {
-          "number": "585",
+          "number": "ESP6",
           "kind": "normal",
-          "label": "Carta 585"
+          "label": "Pedro Porro - Spain"
         },
         {
-          "number": "586",
+          "number": "ESP7",
           "kind": "normal",
-          "label": "Carta 586"
+          "label": "Dani Carvajal - Spain"
         },
         {
-          "number": "587",
+          "number": "ESP8",
           "kind": "normal",
-          "label": "Carta 587"
+          "label": "Marc Cucurella - Spain"
         },
         {
-          "number": "588",
+          "number": "ESP9",
           "kind": "normal",
-          "label": "Carta 588"
+          "label": "Martín Zubimendi - Spain"
         },
         {
-          "number": "589",
+          "number": "ESP10",
           "kind": "normal",
-          "label": "Carta 589"
+          "label": "Rodri - Spain"
         },
         {
-          "number": "590",
+          "number": "ESP11",
           "kind": "normal",
-          "label": "Carta 590"
+          "label": "Pedri - Spain"
         },
         {
-          "number": "591",
+          "number": "ESP12",
           "kind": "normal",
-          "label": "Carta 591"
+          "label": "Fabian Ruiz - Spain"
         },
         {
-          "number": "592",
+          "number": "ESP13",
           "kind": "normal",
-          "label": "Carta 592"
+          "label": "Team Photo - Spain"
         },
         {
-          "number": "593",
+          "number": "ESP14",
           "kind": "normal",
-          "label": "Carta 593"
+          "label": "Mikel Merino - Spain"
         },
         {
-          "number": "594",
+          "number": "ESP15",
           "kind": "normal",
-          "label": "Carta 594"
+          "label": "Lamine Yamal - Spain"
         },
         {
-          "number": "595",
+          "number": "ESP16",
           "kind": "normal",
-          "label": "Carta 595"
+          "label": "Dani Olmo - Spain"
         },
         {
-          "number": "596",
+          "number": "ESP17",
           "kind": "normal",
-          "label": "Carta 596"
+          "label": "Nico Williams - Spain"
         },
         {
-          "number": "597",
+          "number": "ESP18",
           "kind": "normal",
-          "label": "Carta 597"
+          "label": "Ferran Torres - Spain"
         },
         {
-          "number": "598",
+          "number": "ESP19",
           "kind": "normal",
-          "label": "Carta 598"
+          "label": "Álvaro Morata - Spain"
         },
         {
-          "number": "599",
-          "kind": "special",
-          "label": "Brilhante/Especial 599"
-        },
-        {
-          "number": "600",
-          "kind": "special",
-          "label": "Brilhante/Especial 600"
+          "number": "ESP20",
+          "kind": "normal",
+          "label": "Mikel Oyarzabal - Spain"
         }
       ]
     },
     {
-      "id": "country-31",
+      "id": "cpv",
       "order": 31,
-      "name": "País 31",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CPV",
+      "name": "Cape Verde",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "601",
+          "number": "CPV1",
+          "kind": "golden-special",
+          "label": "Team Logo - Cape Verde"
+        },
+        {
+          "number": "CPV2",
           "kind": "normal",
-          "label": "Carta 601"
+          "label": "Vozinha - Cape Verde"
         },
         {
-          "number": "602",
+          "number": "CPV3",
           "kind": "normal",
-          "label": "Carta 602"
+          "label": "Logan Costa - Cape Verde"
         },
         {
-          "number": "603",
+          "number": "CPV4",
           "kind": "normal",
-          "label": "Carta 603"
+          "label": "Pico - Cape Verde"
         },
         {
-          "number": "604",
+          "number": "CPV5",
           "kind": "normal",
-          "label": "Carta 604"
+          "label": "Diney - Cape Verde"
         },
         {
-          "number": "605",
+          "number": "CPV6",
           "kind": "normal",
-          "label": "Carta 605"
+          "label": "Steven Moreira - Cape Verde"
         },
         {
-          "number": "606",
+          "number": "CPV7",
           "kind": "normal",
-          "label": "Carta 606"
+          "label": "Wagner Pina - Cape Verde"
         },
         {
-          "number": "607",
+          "number": "CPV8",
           "kind": "normal",
-          "label": "Carta 607"
+          "label": "Joao Paulo - Cape Verde"
         },
         {
-          "number": "608",
+          "number": "CPV9",
           "kind": "normal",
-          "label": "Carta 608"
+          "label": "Yannick Semedo - Cape Verde"
         },
         {
-          "number": "609",
+          "number": "CPV10",
           "kind": "normal",
-          "label": "Carta 609"
+          "label": "Kevin Pina - Cape Verde"
         },
         {
-          "number": "610",
+          "number": "CPV11",
           "kind": "normal",
-          "label": "Carta 610"
+          "label": "Patrick Andrade - Cape Verde"
         },
         {
-          "number": "611",
+          "number": "CPV12",
           "kind": "normal",
-          "label": "Carta 611"
+          "label": "Jamiro Monteiro - Cape Verde"
         },
         {
-          "number": "612",
+          "number": "CPV13",
           "kind": "normal",
-          "label": "Carta 612"
+          "label": "Team Photo - Cape Verde"
         },
         {
-          "number": "613",
+          "number": "CPV14",
           "kind": "normal",
-          "label": "Carta 613"
+          "label": "Deroy Duarte - Cape Verde"
         },
         {
-          "number": "614",
+          "number": "CPV15",
           "kind": "normal",
-          "label": "Carta 614"
+          "label": "Garry Rodrigues - Cape Verde"
         },
         {
-          "number": "615",
+          "number": "CPV16",
           "kind": "normal",
-          "label": "Carta 615"
+          "label": "Jovane Cabral - Cape Verde"
         },
         {
-          "number": "616",
+          "number": "CPV17",
           "kind": "normal",
-          "label": "Carta 616"
+          "label": "Ryan Mendes - Cape Verde"
         },
         {
-          "number": "617",
+          "number": "CPV18",
           "kind": "normal",
-          "label": "Carta 617"
+          "label": "Dailon Livramento - Cape Verde"
         },
         {
-          "number": "618",
+          "number": "CPV19",
           "kind": "normal",
-          "label": "Carta 618"
+          "label": "Willy Semedo - Cape Verde"
         },
         {
-          "number": "619",
-          "kind": "special",
-          "label": "Brilhante/Especial 619"
-        },
-        {
-          "number": "620",
-          "kind": "special",
-          "label": "Brilhante/Especial 620"
+          "number": "CPV20",
+          "kind": "normal",
+          "label": "Bebe - Cape Verde"
         }
       ]
     },
     {
-      "id": "country-32",
+      "id": "ksa",
       "order": 32,
-      "name": "País 32",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "KSA",
+      "name": "Saudi Arabia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "621",
+          "number": "KSA1",
+          "kind": "golden-special",
+          "label": "Team Logo - Saudi Arabia"
+        },
+        {
+          "number": "KSA2",
           "kind": "normal",
-          "label": "Carta 621"
+          "label": "Nawaf Alaqidi - Saudi Arabia"
         },
         {
-          "number": "622",
+          "number": "KSA3",
           "kind": "normal",
-          "label": "Carta 622"
+          "label": "Abdulrahman Al-Sanbi - Saudi Arabia"
         },
         {
-          "number": "623",
+          "number": "KSA4",
           "kind": "normal",
-          "label": "Carta 623"
+          "label": "Saud Abdulhamid - Saudi Arabia"
         },
         {
-          "number": "624",
+          "number": "KSA5",
           "kind": "normal",
-          "label": "Carta 624"
+          "label": "Nawaf Bouwashl - Saudi Arabia"
         },
         {
-          "number": "625",
+          "number": "KSA6",
           "kind": "normal",
-          "label": "Carta 625"
+          "label": "Jihad Thakri - Saudi Arabia"
         },
         {
-          "number": "626",
+          "number": "KSA7",
           "kind": "normal",
-          "label": "Carta 626"
+          "label": "Moteb Al-Harbi - Saudi Arabia"
         },
         {
-          "number": "627",
+          "number": "KSA8",
           "kind": "normal",
-          "label": "Carta 627"
+          "label": "Hassan Altambakti - Saudi Arabia"
         },
         {
-          "number": "628",
+          "number": "KSA9",
           "kind": "normal",
-          "label": "Carta 628"
+          "label": "Musab Aljuwayr - Saudi Arabia"
         },
         {
-          "number": "629",
+          "number": "KSA10",
           "kind": "normal",
-          "label": "Carta 629"
+          "label": "Ziyad Aljohani - Saudi Arabia"
         },
         {
-          "number": "630",
+          "number": "KSA11",
           "kind": "normal",
-          "label": "Carta 630"
+          "label": "Abdullah Alkhaibari - Saudi Arabia"
         },
         {
-          "number": "631",
+          "number": "KAS12",
           "kind": "normal",
-          "label": "Carta 631"
+          "label": "Nasser Aldawsari - Saudi Arabia"
         },
         {
-          "number": "632",
+          "number": "KSA13",
           "kind": "normal",
-          "label": "Carta 632"
+          "label": "Team Photo - Saudi Arabia"
         },
         {
-          "number": "633",
+          "number": "KSA14",
           "kind": "normal",
-          "label": "Carta 633"
+          "label": "Saleh Abu Alshamat - Saudi Arabia"
         },
         {
-          "number": "634",
+          "number": "KSA15",
           "kind": "normal",
-          "label": "Carta 634"
+          "label": "Marwan Alsahafi - Saudi Arabia"
         },
         {
-          "number": "635",
+          "number": "KSA16",
           "kind": "normal",
-          "label": "Carta 635"
+          "label": "Salem Aldawsari - Saudi Arabia"
         },
         {
-          "number": "636",
+          "number": "KSA17",
           "kind": "normal",
-          "label": "Carta 636"
+          "label": "Abdulrahman Al-Aboud - Saudi Arabia"
         },
         {
-          "number": "637",
+          "number": "KSA18",
           "kind": "normal",
-          "label": "Carta 637"
+          "label": "Feras Akbrikan - Saudi Arabia"
         },
         {
-          "number": "638",
+          "number": "KSA19",
           "kind": "normal",
-          "label": "Carta 638"
+          "label": "Saleh Alshehri - Saudi Arabia"
         },
         {
-          "number": "639",
-          "kind": "special",
-          "label": "Brilhante/Especial 639"
-        },
-        {
-          "number": "640",
-          "kind": "special",
-          "label": "Brilhante/Especial 640"
+          "number": "KSA20",
+          "kind": "normal",
+          "label": "Abdullah Al-Hamdan - Saudi Arabia"
         }
       ]
     },
     {
-      "id": "country-33",
+      "id": "uru",
       "order": 33,
-      "name": "País 33",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "URU",
+      "name": "Uruguay",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "641",
+          "number": "URU1",
+          "kind": "golden-special",
+          "label": "Team Logo - Uruguay"
+        },
+        {
+          "number": "URU2",
           "kind": "normal",
-          "label": "Carta 641"
+          "label": "Sergio Rochet - Uruguay"
         },
         {
-          "number": "642",
+          "number": "URU3",
           "kind": "normal",
-          "label": "Carta 642"
+          "label": "Santiago Mele - Uruguay"
         },
         {
-          "number": "643",
+          "number": "URU4",
           "kind": "normal",
-          "label": "Carta 643"
+          "label": "Ronald Araujo - Uruguay"
         },
         {
-          "number": "644",
+          "number": "URU5",
           "kind": "normal",
-          "label": "Carta 644"
+          "label": "José María Giménez - Uruguay"
         },
         {
-          "number": "645",
+          "number": "URU6",
           "kind": "normal",
-          "label": "Carta 645"
+          "label": "Sebastian Caceres - Uruguay"
         },
         {
-          "number": "646",
+          "number": "URU7",
           "kind": "normal",
-          "label": "Carta 646"
+          "label": "Mathias Olivera - Uruguay"
         },
         {
-          "number": "647",
+          "number": "URU8",
           "kind": "normal",
-          "label": "Carta 647"
+          "label": "Guillermo Varela - Uruguay"
         },
         {
-          "number": "648",
+          "number": "URU9",
           "kind": "normal",
-          "label": "Carta 648"
+          "label": "Nahitan Nandez - Uruguay"
         },
         {
-          "number": "649",
+          "number": "URU10",
           "kind": "normal",
-          "label": "Carta 649"
+          "label": "Federico Valverde - Uruguay"
         },
         {
-          "number": "650",
+          "number": "URU11",
           "kind": "normal",
-          "label": "Carta 650"
+          "label": "Giorgian De Arrascaeta - Uruguay"
         },
         {
-          "number": "651",
+          "number": "URU12",
           "kind": "normal",
-          "label": "Carta 651"
+          "label": "Rodrigo Bentancur - Uruguay"
         },
         {
-          "number": "652",
+          "number": "URU13",
           "kind": "normal",
-          "label": "Carta 652"
+          "label": "Team Photo - Uruguay"
         },
         {
-          "number": "653",
+          "number": "URU14",
           "kind": "normal",
-          "label": "Carta 653"
+          "label": "Manuel Ugarte - Uruguay"
         },
         {
-          "number": "654",
+          "number": "URU15",
           "kind": "normal",
-          "label": "Carta 654"
+          "label": "Nicolás de la Cruz - Uruguay"
         },
         {
-          "number": "655",
+          "number": "URU16",
           "kind": "normal",
-          "label": "Carta 655"
+          "label": "Maxi Araujo - Uruguay"
         },
         {
-          "number": "656",
+          "number": "URU17",
           "kind": "normal",
-          "label": "Carta 656"
+          "label": "Darwin Núñez - Uruguay"
         },
         {
-          "number": "657",
+          "number": "URU18",
           "kind": "normal",
-          "label": "Carta 657"
+          "label": "Federico Viñas - Uruguay"
         },
         {
-          "number": "658",
+          "number": "URU19",
           "kind": "normal",
-          "label": "Carta 658"
+          "label": "Rodrigo Aguirre - Uruguay"
         },
         {
-          "number": "659",
-          "kind": "special",
-          "label": "Brilhante/Especial 659"
-        },
-        {
-          "number": "660",
-          "kind": "special",
-          "label": "Brilhante/Especial 660"
+          "number": "URU20",
+          "kind": "normal",
+          "label": "Facundo Pellistri - Uruguay"
         }
       ]
     },
     {
-      "id": "country-34",
+      "id": "fra",
       "order": 34,
-      "name": "País 34",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "FRA",
+      "name": "France",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "661",
+          "number": "FRA1",
+          "kind": "golden-special",
+          "label": "Team Logo - France"
+        },
+        {
+          "number": "FRA2",
           "kind": "normal",
-          "label": "Carta 661"
+          "label": "Mike Maignan - France"
         },
         {
-          "number": "662",
+          "number": "FRA3",
           "kind": "normal",
-          "label": "Carta 662"
+          "label": "Theo Hernandez - France"
         },
         {
-          "number": "663",
+          "number": "FRA4",
           "kind": "normal",
-          "label": "Carta 663"
+          "label": "William Saliba - France"
         },
         {
-          "number": "664",
+          "number": "FRA5",
           "kind": "normal",
-          "label": "Carta 664"
+          "label": "Jules Kounde - France"
         },
         {
-          "number": "665",
+          "number": "FRA6",
           "kind": "normal",
-          "label": "Carta 665"
+          "label": "Ibrahima Konate - France"
         },
         {
-          "number": "666",
+          "number": "FRA7",
           "kind": "normal",
-          "label": "Carta 666"
+          "label": "Dayot Upamecano - France"
         },
         {
-          "number": "667",
+          "number": "FRA8",
           "kind": "normal",
-          "label": "Carta 667"
+          "label": "Lucas Digne - France"
         },
         {
-          "number": "668",
+          "number": "FRA9",
           "kind": "normal",
-          "label": "Carta 668"
+          "label": "Aurélien Tchouaméni - France"
         },
         {
-          "number": "669",
+          "number": "FRA10",
           "kind": "normal",
-          "label": "Carta 669"
+          "label": "Eduardo Camavinga - France"
         },
         {
-          "number": "670",
+          "number": "FRA11",
           "kind": "normal",
-          "label": "Carta 670"
+          "label": "Manu Kone - France"
         },
         {
-          "number": "671",
+          "number": "FRA12",
           "kind": "normal",
-          "label": "Carta 671"
+          "label": "Adrien Rabiot - France"
         },
         {
-          "number": "672",
+          "number": "FRA13",
           "kind": "normal",
-          "label": "Carta 672"
+          "label": "Team Photo - France"
         },
         {
-          "number": "673",
+          "number": "FRA14",
           "kind": "normal",
-          "label": "Carta 673"
+          "label": "Michael Olise - France"
         },
         {
-          "number": "674",
+          "number": "FRA15",
           "kind": "normal",
-          "label": "Carta 674"
+          "label": "Ousmane Dembele - France"
         },
         {
-          "number": "675",
+          "number": "FRA16",
           "kind": "normal",
-          "label": "Carta 675"
+          "label": "Bradley Barcola - France"
         },
         {
-          "number": "676",
+          "number": "FRA17",
           "kind": "normal",
-          "label": "Carta 676"
+          "label": "Désiré Doué - France"
         },
         {
-          "number": "677",
+          "number": "FRA18",
           "kind": "normal",
-          "label": "Carta 677"
+          "label": "Kingsley Coman - France"
         },
         {
-          "number": "678",
+          "number": "FRA19",
           "kind": "normal",
-          "label": "Carta 678"
+          "label": "Hugo Ekitike - France"
         },
         {
-          "number": "679",
-          "kind": "special",
-          "label": "Brilhante/Especial 679"
-        },
-        {
-          "number": "680",
-          "kind": "special",
-          "label": "Brilhante/Especial 680"
+          "number": "FRA20",
+          "kind": "normal",
+          "label": "Kylian Mbappe - France"
         }
       ]
     },
     {
-      "id": "country-35",
+      "id": "sen",
       "order": 35,
-      "name": "País 35",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "SEN",
+      "name": "Senegal",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "681",
+          "number": "SEN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Senegal"
+        },
+        {
+          "number": "SEN2",
           "kind": "normal",
-          "label": "Carta 681"
+          "label": "Edouard Mendy - Senegal"
         },
         {
-          "number": "682",
+          "number": "SEN3",
           "kind": "normal",
-          "label": "Carta 682"
+          "label": "Yehvann Diouf - Senegal"
         },
         {
-          "number": "683",
+          "number": "SEN4",
           "kind": "normal",
-          "label": "Carta 683"
+          "label": "Moussa Niakhaté - Senegal"
         },
         {
-          "number": "684",
+          "number": "SEN5",
           "kind": "normal",
-          "label": "Carta 684"
+          "label": "Abdoulaye Seck - Senegal"
         },
         {
-          "number": "685",
+          "number": "SEN6",
           "kind": "normal",
-          "label": "Carta 685"
+          "label": "Ismail Jakobs - Senegal"
         },
         {
-          "number": "686",
+          "number": "SEN7",
           "kind": "normal",
-          "label": "Carta 686"
+          "label": "El Hadji Malick Diouf - Senegal"
         },
         {
-          "number": "687",
+          "number": "SEN8",
           "kind": "normal",
-          "label": "Carta 687"
+          "label": "Kalidou Koulibaly - Senegal"
         },
         {
-          "number": "688",
+          "number": "SEN9",
           "kind": "normal",
-          "label": "Carta 688"
+          "label": "Idrissa Gana Gueye - Senegal"
         },
         {
-          "number": "689",
+          "number": "SEN10",
           "kind": "normal",
-          "label": "Carta 689"
+          "label": "Pape Matar Sarr - Senegal"
         },
         {
-          "number": "690",
+          "number": "SEN11",
           "kind": "normal",
-          "label": "Carta 690"
+          "label": "Pape Gueye - Senegal"
         },
         {
-          "number": "691",
+          "number": "SEN12",
           "kind": "normal",
-          "label": "Carta 691"
+          "label": "Habib Diarra - Senegal"
         },
         {
-          "number": "692",
+          "number": "SEN13",
           "kind": "normal",
-          "label": "Carta 692"
+          "label": "Team Photo - Senegal"
         },
         {
-          "number": "693",
+          "number": "SEN14",
           "kind": "normal",
-          "label": "Carta 693"
+          "label": "Lamine Camara - Senegal"
         },
         {
-          "number": "694",
+          "number": "SEN15",
           "kind": "normal",
-          "label": "Carta 694"
+          "label": "Sadio Mane - Senegal"
         },
         {
-          "number": "695",
+          "number": "SEN16",
           "kind": "normal",
-          "label": "Carta 695"
+          "label": "Ismaïla Sarr - Senegal"
         },
         {
-          "number": "696",
+          "number": "SEN17",
           "kind": "normal",
-          "label": "Carta 696"
+          "label": "Boulaye Dia - Senegal"
         },
         {
-          "number": "697",
+          "number": "SEN18",
           "kind": "normal",
-          "label": "Carta 697"
+          "label": "Iliman Ndiaye - Senegal"
         },
         {
-          "number": "698",
+          "number": "SEN19",
           "kind": "normal",
-          "label": "Carta 698"
+          "label": "Nicolas Jackson - Senegal"
         },
         {
-          "number": "699",
-          "kind": "special",
-          "label": "Brilhante/Especial 699"
-        },
-        {
-          "number": "700",
-          "kind": "special",
-          "label": "Brilhante/Especial 700"
+          "number": "SEN20",
+          "kind": "normal",
+          "label": "Krepin Diatta - Senegal"
         }
       ]
     },
     {
-      "id": "country-36",
+      "id": "irq",
       "order": 36,
-      "name": "País 36",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "IRQ",
+      "name": "Iraq",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "701",
+          "number": "IRQ1",
+          "kind": "golden-special",
+          "label": "Team Logo - Iraq"
+        },
+        {
+          "number": "IRQ2",
           "kind": "normal",
-          "label": "Carta 701"
+          "label": "Jalal Hassan - Iraq"
         },
         {
-          "number": "702",
+          "number": "IRQ3",
           "kind": "normal",
-          "label": "Carta 702"
+          "label": "Rebin Sulaka - Iraq"
         },
         {
-          "number": "703",
+          "number": "IRQ4",
           "kind": "normal",
-          "label": "Carta 703"
+          "label": "Hussein Ali - Iraq"
         },
         {
-          "number": "704",
+          "number": "IRQ5",
           "kind": "normal",
-          "label": "Carta 704"
+          "label": "Akam Hashem - Iraq"
         },
         {
-          "number": "705",
+          "number": "IRQ6",
           "kind": "normal",
-          "label": "Carta 705"
+          "label": "Merchas Doski - Iraq"
         },
         {
-          "number": "706",
+          "number": "IRQ7",
           "kind": "normal",
-          "label": "Carta 706"
+          "label": "Zaid Tahseen - Iraq"
         },
         {
-          "number": "707",
+          "number": "IRQ8",
           "kind": "normal",
-          "label": "Carta 707"
+          "label": "Manaf Younis - Iraq"
         },
         {
-          "number": "708",
+          "number": "IRQ9",
           "kind": "normal",
-          "label": "Carta 708"
+          "label": "Zidane Iqbal - Iraq"
         },
         {
-          "number": "709",
+          "number": "IRQ10",
           "kind": "normal",
-          "label": "Carta 709"
+          "label": "Amir Al-Ammari - Iraq"
         },
         {
-          "number": "710",
+          "number": "IRQ11",
           "kind": "normal",
-          "label": "Carta 710"
+          "label": "Ibrahim Bavesh - Iraq"
         },
         {
-          "number": "711",
+          "number": "IRQ12",
           "kind": "normal",
-          "label": "Carta 711"
+          "label": "Ali Jasim - Iraq"
         },
         {
-          "number": "712",
+          "number": "IRQ13",
           "kind": "normal",
-          "label": "Carta 712"
+          "label": "Team Photo - Iraq"
         },
         {
-          "number": "713",
+          "number": "IRQ14",
           "kind": "normal",
-          "label": "Carta 713"
+          "label": "Youssef Amyn - Iraq"
         },
         {
-          "number": "714",
+          "number": "IRQ15",
           "kind": "normal",
-          "label": "Carta 714"
+          "label": "Aimar Sher - Iraq"
         },
         {
-          "number": "715",
+          "number": "IRQ16",
           "kind": "normal",
-          "label": "Carta 715"
+          "label": "Marko Farji - Iraq"
         },
         {
-          "number": "716",
+          "number": "IRQ17",
           "kind": "normal",
-          "label": "Carta 716"
+          "label": "Osama Rashid - Iraq"
         },
         {
-          "number": "717",
+          "number": "IRQ18",
           "kind": "normal",
-          "label": "Carta 717"
+          "label": "Ali Al-Hamadi - Iraq"
         },
         {
-          "number": "718",
+          "number": "IRQ19",
           "kind": "normal",
-          "label": "Carta 718"
+          "label": "Aymen Hussein - Iraq"
         },
         {
-          "number": "719",
-          "kind": "special",
-          "label": "Brilhante/Especial 719"
-        },
-        {
-          "number": "720",
-          "kind": "special",
-          "label": "Brilhante/Especial 720"
+          "number": "IRQ20",
+          "kind": "normal",
+          "label": "Mohanad Ali - Iraq"
         }
       ]
     },
     {
-      "id": "country-37",
+      "id": "nor",
       "order": 37,
-      "name": "País 37",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "NOR",
+      "name": "Norway",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "721",
+          "number": "NOR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Norway"
+        },
+        {
+          "number": "NOR2",
           "kind": "normal",
-          "label": "Carta 721"
+          "label": "Orjan Nyland - Norway"
         },
         {
-          "number": "722",
+          "number": "NOR3",
           "kind": "normal",
-          "label": "Carta 722"
+          "label": "Julian Ryerson - Norway"
         },
         {
-          "number": "723",
+          "number": "NOR4",
           "kind": "normal",
-          "label": "Carta 723"
+          "label": "Leo Ostigård - Norway"
         },
         {
-          "number": "724",
+          "number": "NOR5",
           "kind": "normal",
-          "label": "Carta 724"
+          "label": "Kristoffer Vassbakk Ajer - Norway"
         },
         {
-          "number": "725",
+          "number": "NOR6",
           "kind": "normal",
-          "label": "Carta 725"
+          "label": "Marcus Holmgren Pedersen - Norway"
         },
         {
-          "number": "726",
+          "number": "NOR7",
           "kind": "normal",
-          "label": "Carta 726"
+          "label": "David Møller Wolfe - Norway"
         },
         {
-          "number": "727",
+          "number": "NOR8",
           "kind": "normal",
-          "label": "Carta 727"
+          "label": "Torbjørn Heggem - Norway"
         },
         {
-          "number": "728",
+          "number": "NOR9",
           "kind": "normal",
-          "label": "Carta 728"
+          "label": "Morten Thorsby - Norway"
         },
         {
-          "number": "729",
+          "number": "NOR10",
           "kind": "normal",
-          "label": "Carta 729"
+          "label": "Martin Ødegaard - Norway"
         },
         {
-          "number": "730",
+          "number": "NOR11",
           "kind": "normal",
-          "label": "Carta 730"
+          "label": "Sander Berge - Norway"
         },
         {
-          "number": "731",
+          "number": "NOR12",
           "kind": "normal",
-          "label": "Carta 731"
+          "label": "Andreas Schjelderup - Norway"
         },
         {
-          "number": "732",
+          "number": "NOR13",
           "kind": "normal",
-          "label": "Carta 732"
+          "label": "Team Photo - Norway"
         },
         {
-          "number": "733",
+          "number": "NOR14",
           "kind": "normal",
-          "label": "Carta 733"
+          "label": "Patrick Berg - Norway"
         },
         {
-          "number": "734",
+          "number": "NOR15",
           "kind": "normal",
-          "label": "Carta 734"
+          "label": "Erling Haaland - Norway"
         },
         {
-          "number": "735",
+          "number": "NOR16",
           "kind": "normal",
-          "label": "Carta 735"
+          "label": "Alexander Sørloth - Norway"
         },
         {
-          "number": "736",
+          "number": "NOR17",
           "kind": "normal",
-          "label": "Carta 736"
+          "label": "Aron Dønnum - Norway"
         },
         {
-          "number": "737",
+          "number": "NOR18",
           "kind": "normal",
-          "label": "Carta 737"
+          "label": "Jorgen Strand Larsen - Norway"
         },
         {
-          "number": "738",
+          "number": "NOR19",
           "kind": "normal",
-          "label": "Carta 738"
+          "label": "Antonio Nusa - Norway"
         },
         {
-          "number": "739",
-          "kind": "special",
-          "label": "Brilhante/Especial 739"
-        },
-        {
-          "number": "740",
-          "kind": "special",
-          "label": "Brilhante/Especial 740"
+          "number": "NOR20",
+          "kind": "normal",
+          "label": "Oscar Bobb - Norway"
         }
       ]
     },
     {
-      "id": "country-38",
+      "id": "arg",
       "order": 38,
-      "name": "País 38",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "ARG",
+      "name": "Argentina",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "741",
+          "number": "ARG1",
+          "kind": "golden-special",
+          "label": "Team Logo - Argentina"
+        },
+        {
+          "number": "ARG2",
           "kind": "normal",
-          "label": "Carta 741"
+          "label": "Emiliano Martinez - Argentina"
         },
         {
-          "number": "742",
+          "number": "ARG3",
           "kind": "normal",
-          "label": "Carta 742"
+          "label": "Nahuel Molina - Argentina"
         },
         {
-          "number": "743",
+          "number": "ARG4",
           "kind": "normal",
-          "label": "Carta 743"
+          "label": "Cristian Romero - Argentina"
         },
         {
-          "number": "744",
+          "number": "ARG5",
           "kind": "normal",
-          "label": "Carta 744"
+          "label": "Nicolas Otamendi - Argentina"
         },
         {
-          "number": "745",
+          "number": "ARG6",
           "kind": "normal",
-          "label": "Carta 745"
+          "label": "Nicolas Tagliafico - Argentina"
         },
         {
-          "number": "746",
+          "number": "ARG7",
           "kind": "normal",
-          "label": "Carta 746"
+          "label": "Leonardo Balerdi - Argentina"
         },
         {
-          "number": "747",
+          "number": "ARG8",
           "kind": "normal",
-          "label": "Carta 747"
+          "label": "Enzo Fernandez - Argentina"
         },
         {
-          "number": "748",
+          "number": "ARG9",
           "kind": "normal",
-          "label": "Carta 748"
+          "label": "Alexis Mac Allister - Argentina"
         },
         {
-          "number": "749",
+          "number": "ARG10",
           "kind": "normal",
-          "label": "Carta 749"
+          "label": "Rodrigo De Paul - Argentina"
         },
         {
-          "number": "750",
+          "number": "ARG11",
           "kind": "normal",
-          "label": "Carta 750"
+          "label": "Exequiel Palacios - Argentina"
         },
         {
-          "number": "751",
+          "number": "ARG12",
           "kind": "normal",
-          "label": "Carta 751"
+          "label": "Leandro Paredes - Argentina"
         },
         {
-          "number": "752",
+          "number": "ARG13",
           "kind": "normal",
-          "label": "Carta 752"
+          "label": "Team Photo - Argentina"
         },
         {
-          "number": "753",
+          "number": "ARG14",
           "kind": "normal",
-          "label": "Carta 753"
+          "label": "Nico Paz - Argentina"
         },
         {
-          "number": "754",
+          "number": "ARG15",
           "kind": "normal",
-          "label": "Carta 754"
+          "label": "Franco Mastantuono - Argentina"
         },
         {
-          "number": "755",
+          "number": "ARG16",
           "kind": "normal",
-          "label": "Carta 755"
+          "label": "Nico Gonzalez - Argentina"
         },
         {
-          "number": "756",
+          "number": "ARG17",
           "kind": "normal",
-          "label": "Carta 756"
+          "label": "Lionel Messi - Argentina"
         },
         {
-          "number": "757",
+          "number": "ARG18",
           "kind": "normal",
-          "label": "Carta 757"
+          "label": "Lautaro Martinez - Argentina"
         },
         {
-          "number": "758",
+          "number": "ARG19",
           "kind": "normal",
-          "label": "Carta 758"
+          "label": "Julian Alvarez - Argentina"
         },
         {
-          "number": "759",
-          "kind": "special",
-          "label": "Brilhante/Especial 759"
-        },
-        {
-          "number": "760",
-          "kind": "special",
-          "label": "Brilhante/Especial 760"
+          "number": "ARG20",
+          "kind": "normal",
+          "label": "Giuliano Simeone - Argentina"
         }
       ]
     },
     {
-      "id": "country-39",
+      "id": "alg",
       "order": 39,
-      "name": "País 39",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "ALG",
+      "name": "Algeria",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "761",
+          "number": "ALG1",
+          "kind": "golden-special",
+          "label": "Team Logo - Algeria"
+        },
+        {
+          "number": "ALG2",
           "kind": "normal",
-          "label": "Carta 761"
+          "label": "Alexis Guendouz - Algeria"
         },
         {
-          "number": "762",
+          "number": "ALG3",
           "kind": "normal",
-          "label": "Carta 762"
+          "label": "Ramy Bensebaini - Algeria"
         },
         {
-          "number": "763",
+          "number": "ALG4",
           "kind": "normal",
-          "label": "Carta 763"
+          "label": "Youcef Atal - Algeria"
         },
         {
-          "number": "764",
+          "number": "ALG5",
           "kind": "normal",
-          "label": "Carta 764"
+          "label": "Rayan Aït-Nouri - Algeria"
         },
         {
-          "number": "765",
+          "number": "ALG6",
           "kind": "normal",
-          "label": "Carta 765"
+          "label": "Mohamed Amine Tougai - Algeria"
         },
         {
-          "number": "766",
+          "number": "ALG7",
           "kind": "normal",
-          "label": "Carta 766"
+          "label": "Aïssa Mandi - Algeria"
         },
         {
-          "number": "767",
+          "number": "ALG8",
           "kind": "normal",
-          "label": "Carta 767"
+          "label": "Ismael Bennacer - Algeria"
         },
         {
-          "number": "768",
+          "number": "ALG9",
           "kind": "normal",
-          "label": "Carta 768"
+          "label": "Houssem Aquar - Algeria"
         },
         {
-          "number": "769",
+          "number": "ALG10",
           "kind": "normal",
-          "label": "Carta 769"
+          "label": "Hicham Boudaoui - Algeria"
         },
         {
-          "number": "770",
+          "number": "ALG11",
           "kind": "normal",
-          "label": "Carta 770"
+          "label": "Ramiz Zerrouki - Algeria"
         },
         {
-          "number": "771",
+          "number": "ALG12",
           "kind": "normal",
-          "label": "Carta 771"
+          "label": "Nabil Bentalab - Algeria"
         },
         {
-          "number": "772",
+          "number": "ALG13",
           "kind": "normal",
-          "label": "Carta 772"
+          "label": "Team Photo - Algeria"
         },
         {
-          "number": "773",
+          "number": "ALG14",
           "kind": "normal",
-          "label": "Carta 773"
+          "label": "Farés Chaibi - Algeria"
         },
         {
-          "number": "774",
+          "number": "ALG15",
           "kind": "normal",
-          "label": "Carta 774"
+          "label": "Riyad Mahrez - Algeria"
         },
         {
-          "number": "775",
+          "number": "ALG16",
           "kind": "normal",
-          "label": "Carta 775"
+          "label": "Said Benrahma - Algeria"
         },
         {
-          "number": "776",
+          "number": "ALG17",
           "kind": "normal",
-          "label": "Carta 776"
+          "label": "Anis Hadj Moussa - Algeria"
         },
         {
-          "number": "777",
+          "number": "ALG18",
           "kind": "normal",
-          "label": "Carta 777"
+          "label": "Amine Gouiri - Algeria"
         },
         {
-          "number": "778",
+          "number": "ALG19",
           "kind": "normal",
-          "label": "Carta 778"
+          "label": "Baghdad Bounedjah - Algeria"
         },
         {
-          "number": "779",
-          "kind": "special",
-          "label": "Brilhante/Especial 779"
-        },
-        {
-          "number": "780",
-          "kind": "special",
-          "label": "Brilhante/Especial 780"
+          "number": "ALG20",
+          "kind": "normal",
+          "label": "Mohammed Amoura - Algeria"
         }
       ]
     },
     {
-      "id": "country-40",
+      "id": "aut",
       "order": 40,
-      "name": "País 40",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "AUT",
+      "name": "Austria",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "781",
+          "number": "AUT1",
+          "kind": "golden-special",
+          "label": "Team Logo - Austria"
+        },
+        {
+          "number": "AUT2",
           "kind": "normal",
-          "label": "Carta 781"
+          "label": "Alexander Schlager - Austria"
         },
         {
-          "number": "782",
+          "number": "AUT3",
           "kind": "normal",
-          "label": "Carta 782"
+          "label": "Patrick Pentz - Austria"
         },
         {
-          "number": "783",
+          "number": "AUT4",
           "kind": "normal",
-          "label": "Carta 783"
+          "label": "David Alaba - Austria"
         },
         {
-          "number": "784",
+          "number": "AUT5",
           "kind": "normal",
-          "label": "Carta 784"
+          "label": "Kevin Danso - Austria"
         },
         {
-          "number": "785",
+          "number": "AUT6",
           "kind": "normal",
-          "label": "Carta 785"
+          "label": "Philipp Lienhart - Austria"
         },
         {
-          "number": "786",
+          "number": "AUT7",
           "kind": "normal",
-          "label": "Carta 786"
+          "label": "Stefan Posch - Austria"
         },
         {
-          "number": "787",
+          "number": "AUT8",
           "kind": "normal",
-          "label": "Carta 787"
+          "label": "Phillipp Mwene - Austria"
         },
         {
-          "number": "788",
+          "number": "AUT9",
           "kind": "normal",
-          "label": "Carta 788"
+          "label": "Alexander Prass - Austria"
         },
         {
-          "number": "789",
+          "number": "AUT10",
           "kind": "normal",
-          "label": "Carta 789"
+          "label": "Xaver Schlager - Austria"
         },
         {
-          "number": "790",
+          "number": "AUT11",
           "kind": "normal",
-          "label": "Carta 790"
+          "label": "Marcel Sabitzer - Austria"
         },
         {
-          "number": "791",
+          "number": "AUT12",
           "kind": "normal",
-          "label": "Carta 791"
+          "label": "Konrad Laimer - Austria"
         },
         {
-          "number": "792",
+          "number": "AUT13",
           "kind": "normal",
-          "label": "Carta 792"
+          "label": "Team Photo - Austria"
         },
         {
-          "number": "793",
+          "number": "AUT14",
           "kind": "normal",
-          "label": "Carta 793"
+          "label": "Florian Grillitsch - Austria"
         },
         {
-          "number": "794",
+          "number": "AUT15",
           "kind": "normal",
-          "label": "Carta 794"
+          "label": "Nicolas Seiwald - Austria"
         },
         {
-          "number": "795",
+          "number": "AUT16",
           "kind": "normal",
-          "label": "Carta 795"
+          "label": "Romano Schmid - Austria"
         },
         {
-          "number": "796",
+          "number": "AUT17",
           "kind": "normal",
-          "label": "Carta 796"
+          "label": "Patrick Wimmer - Austria"
         },
         {
-          "number": "797",
+          "number": "AUT18",
           "kind": "normal",
-          "label": "Carta 797"
+          "label": "Christoph Baumgartner - Austria"
         },
         {
-          "number": "798",
+          "number": "AUT19",
           "kind": "normal",
-          "label": "Carta 798"
+          "label": "Michael Gregoritsch - Austria"
         },
         {
-          "number": "799",
-          "kind": "special",
-          "label": "Brilhante/Especial 799"
-        },
-        {
-          "number": "800",
-          "kind": "special",
-          "label": "Brilhante/Especial 800"
+          "number": "AUT20",
+          "kind": "normal",
+          "label": "Marko Arnautović - Austria"
         }
       ]
     },
     {
-      "id": "country-41",
+      "id": "jor",
       "order": 41,
-      "name": "País 41",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "JOR",
+      "name": "Jordan",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "801",
+          "number": "JOR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Jordan"
+        },
+        {
+          "number": "JOR2",
           "kind": "normal",
-          "label": "Carta 801"
+          "label": "Yazeed Abulaila - Jordan"
         },
         {
-          "number": "802",
+          "number": "JOR3",
           "kind": "normal",
-          "label": "Carta 802"
+          "label": "Ihsan Haddad - Jordan"
         },
         {
-          "number": "803",
+          "number": "JOR4",
           "kind": "normal",
-          "label": "Carta 803"
+          "label": "Mohammad Abu Hashish - Jordan"
         },
         {
-          "number": "804",
+          "number": "JOR5",
           "kind": "normal",
-          "label": "Carta 804"
+          "label": "Yazan Al-Arab - Jordan"
         },
         {
-          "number": "805",
+          "number": "JOR6",
           "kind": "normal",
-          "label": "Carta 805"
+          "label": "Abdallah Nasib - Jordan"
         },
         {
-          "number": "806",
+          "number": "JOR7",
           "kind": "normal",
-          "label": "Carta 806"
+          "label": "Saleem Obaid - Jordan"
         },
         {
-          "number": "807",
+          "number": "JOR8",
           "kind": "normal",
-          "label": "Carta 807"
+          "label": "Mohammad Abualnadi - Jordan"
         },
         {
-          "number": "808",
+          "number": "JOR9",
           "kind": "normal",
-          "label": "Carta 808"
+          "label": "Ibrahim Saadeh - Jordan"
         },
         {
-          "number": "809",
+          "number": "JOR10",
           "kind": "normal",
-          "label": "Carta 809"
+          "label": "Nizar Al-Rashdan - Jordan"
         },
         {
-          "number": "810",
+          "number": "JOR11",
           "kind": "normal",
-          "label": "Carta 810"
+          "label": "Noor Al-Rawabdeh - Jordan"
         },
         {
-          "number": "811",
+          "number": "JOR12",
           "kind": "normal",
-          "label": "Carta 811"
+          "label": "Mohannad Abu Taha - Jordan"
         },
         {
-          "number": "812",
+          "number": "JOR13",
           "kind": "normal",
-          "label": "Carta 812"
+          "label": "Team Photo - Jordan"
         },
         {
-          "number": "813",
+          "number": "JOR14",
           "kind": "normal",
-          "label": "Carta 813"
+          "label": "Amer Jamous - Jordan"
         },
         {
-          "number": "814",
+          "number": "JOR15",
           "kind": "normal",
-          "label": "Carta 814"
+          "label": "Musa Al-Taamari - Jordan"
         },
         {
-          "number": "815",
+          "number": "JOR16",
           "kind": "normal",
-          "label": "Carta 815"
+          "label": "Yazan Al-Naimat - Jordan"
         },
         {
-          "number": "816",
+          "number": "JOR17",
           "kind": "normal",
-          "label": "Carta 816"
+          "label": "Mahmoud Al-Mardi - Jordan"
         },
         {
-          "number": "817",
+          "number": "JOR18",
           "kind": "normal",
-          "label": "Carta 817"
+          "label": "Ali Olwan - Jordan"
         },
         {
-          "number": "818",
+          "number": "JOR19",
           "kind": "normal",
-          "label": "Carta 818"
+          "label": "Mohammad Abu Zrayq - Jordan"
         },
         {
-          "number": "819",
-          "kind": "special",
-          "label": "Brilhante/Especial 819"
-        },
-        {
-          "number": "820",
-          "kind": "special",
-          "label": "Brilhante/Especial 820"
+          "number": "JOR20",
+          "kind": "normal",
+          "label": "Ibrahim Sabra - Jordan"
         }
       ]
     },
     {
-      "id": "country-42",
+      "id": "por",
       "order": 42,
-      "name": "País 42",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "POR",
+      "name": "Portugal",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "821",
+          "number": "POR1",
+          "kind": "golden-special",
+          "label": "Team Logo - Portugal"
+        },
+        {
+          "number": "POR2",
           "kind": "normal",
-          "label": "Carta 821"
+          "label": "Diogo Costa - Portugal"
         },
         {
-          "number": "822",
+          "number": "POR3",
           "kind": "normal",
-          "label": "Carta 822"
+          "label": "Jose Sa - Portugal"
         },
         {
-          "number": "823",
+          "number": "POR4",
           "kind": "normal",
-          "label": "Carta 823"
+          "label": "Ruben Dias - Portugal"
         },
         {
-          "number": "824",
+          "number": "POR5",
           "kind": "normal",
-          "label": "Carta 824"
+          "label": "João Cancelo - Portugal"
         },
         {
-          "number": "825",
+          "number": "POR6",
           "kind": "normal",
-          "label": "Carta 825"
+          "label": "Diogo Dalot - Portugal"
         },
         {
-          "number": "826",
+          "number": "POR7",
           "kind": "normal",
-          "label": "Carta 826"
+          "label": "Nuno Mendes - Portugal"
         },
         {
-          "number": "827",
+          "number": "POR8",
           "kind": "normal",
-          "label": "Carta 827"
+          "label": "Gonçalo Inácio - Portugal"
         },
         {
-          "number": "828",
+          "number": "POR9",
           "kind": "normal",
-          "label": "Carta 828"
+          "label": "Bernardo Silva - Portugal"
         },
         {
-          "number": "829",
+          "number": "POR10",
           "kind": "normal",
-          "label": "Carta 829"
+          "label": "Bruno Fernandes - Portugal"
         },
         {
-          "number": "830",
+          "number": "POR11",
           "kind": "normal",
-          "label": "Carta 830"
+          "label": "Ruben Neves - Portugal"
         },
         {
-          "number": "831",
+          "number": "POR12",
           "kind": "normal",
-          "label": "Carta 831"
+          "label": "Vitinha - Portugal"
         },
         {
-          "number": "832",
+          "number": "POR13",
           "kind": "normal",
-          "label": "Carta 832"
+          "label": "Team Photo - Portugal"
         },
         {
-          "number": "833",
+          "number": "POR14",
           "kind": "normal",
-          "label": "Carta 833"
+          "label": "João Neves - Portugal"
         },
         {
-          "number": "834",
+          "number": "POR15",
           "kind": "normal",
-          "label": "Carta 834"
+          "label": "Cristiano Ronaldo - Portugal"
         },
         {
-          "number": "835",
+          "number": "POR16",
           "kind": "normal",
-          "label": "Carta 835"
+          "label": "Francisco Trincao - Portugal"
         },
         {
-          "number": "836",
+          "number": "POR17",
           "kind": "normal",
-          "label": "Carta 836"
+          "label": "João Felix - Portugal"
         },
         {
-          "number": "837",
+          "number": "POR18",
           "kind": "normal",
-          "label": "Carta 837"
+          "label": "Gonçalo Ramos - Portugal"
         },
         {
-          "number": "838",
+          "number": "POR19",
           "kind": "normal",
-          "label": "Carta 838"
+          "label": "Pedro Neto - Portugal"
         },
         {
-          "number": "839",
-          "kind": "special",
-          "label": "Brilhante/Especial 839"
-        },
-        {
-          "number": "840",
-          "kind": "special",
-          "label": "Brilhante/Especial 840"
+          "number": "POR20",
+          "kind": "normal",
+          "label": "Rafael Leão - Portugal"
         }
       ]
     },
     {
-      "id": "country-43",
+      "id": "cod",
       "order": 43,
-      "name": "País 43",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "COD",
+      "name": "Congo DR",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "841",
+          "number": "COD1",
+          "kind": "golden-special",
+          "label": "Team Logo - Congo DR"
+        },
+        {
+          "number": "COD2",
           "kind": "normal",
-          "label": "Carta 841"
+          "label": "Lionel Mpasi - Congo DR"
         },
         {
-          "number": "842",
+          "number": "COD3",
           "kind": "normal",
-          "label": "Carta 842"
+          "label": "Aaron Wan-Bissaka - Congo DR"
         },
         {
-          "number": "843",
+          "number": "COD4",
           "kind": "normal",
-          "label": "Carta 843"
+          "label": "Axel Tuanzebe - Congo DR"
         },
         {
-          "number": "844",
+          "number": "COD5",
           "kind": "normal",
-          "label": "Carta 844"
+          "label": "Arthur Masuaku - Congo DR"
         },
         {
-          "number": "845",
+          "number": "COD6",
           "kind": "normal",
-          "label": "Carta 845"
+          "label": "Chancel Mbemba - Congo DR"
         },
         {
-          "number": "846",
+          "number": "COD7",
           "kind": "normal",
-          "label": "Carta 846"
+          "label": "Joris Kayembe - Congo DR"
         },
         {
-          "number": "847",
+          "number": "COD8",
           "kind": "normal",
-          "label": "Carta 847"
+          "label": "Charles Pickel - Congo DR"
         },
         {
-          "number": "848",
+          "number": "COD9",
           "kind": "normal",
-          "label": "Carta 848"
+          "label": "Ngal'ayel Mukau - Congo DR"
         },
         {
-          "number": "849",
+          "number": "COD10",
           "kind": "normal",
-          "label": "Carta 849"
+          "label": "Edo Kayembe - Congo DR"
         },
         {
-          "number": "850",
+          "number": "COD11",
           "kind": "normal",
-          "label": "Carta 850"
+          "label": "Samuel Moutoussamy - Congo DR"
         },
         {
-          "number": "851",
+          "number": "COD12",
           "kind": "normal",
-          "label": "Carta 851"
+          "label": "Noah Sadiki - Congo DR"
         },
         {
-          "number": "852",
+          "number": "COD13",
           "kind": "normal",
-          "label": "Carta 852"
+          "label": "Team Photo - Congo DR"
         },
         {
-          "number": "853",
+          "number": "COD14",
           "kind": "normal",
-          "label": "Carta 853"
+          "label": "Théo Bongonda - Congo DR"
         },
         {
-          "number": "854",
+          "number": "COD15",
           "kind": "normal",
-          "label": "Carta 854"
+          "label": "Meschak Elia - Congo DR"
         },
         {
-          "number": "855",
+          "number": "COD16",
           "kind": "normal",
-          "label": "Carta 855"
+          "label": "Yoane Wissa - Congo DR"
         },
         {
-          "number": "856",
+          "number": "COD17",
           "kind": "normal",
-          "label": "Carta 856"
+          "label": "Brian Cipenga - Congo DR"
         },
         {
-          "number": "857",
+          "number": "COD18",
           "kind": "normal",
-          "label": "Carta 857"
+          "label": "Fiston Mayele - Congo DR"
         },
         {
-          "number": "858",
+          "number": "COD19",
           "kind": "normal",
-          "label": "Carta 858"
+          "label": "Cédric Bakambu - Congo DR"
         },
         {
-          "number": "859",
-          "kind": "special",
-          "label": "Brilhante/Especial 859"
-        },
-        {
-          "number": "860",
-          "kind": "special",
-          "label": "Brilhante/Especial 860"
+          "number": "COD20",
+          "kind": "normal",
+          "label": "Nathanaël Mbuku - Congo DR"
         }
       ]
     },
     {
-      "id": "country-44",
+      "id": "uzb",
       "order": 44,
-      "name": "País 44",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "861",
+          "number": "UZB1",
+          "kind": "golden-special",
+          "label": "Team Logo - Uzbekistan"
+        },
+        {
+          "number": "UZB2",
           "kind": "normal",
-          "label": "Carta 861"
+          "label": "Utkir Yusupov - Uzbekistan"
         },
         {
-          "number": "862",
+          "number": "UZB3",
           "kind": "normal",
-          "label": "Carta 862"
+          "label": "Farrukh Savfiev - Uzbekistan"
         },
         {
-          "number": "863",
+          "number": "UZB4",
           "kind": "normal",
-          "label": "Carta 863"
+          "label": "Sherzod Nasrullaev - Uzbekistan"
         },
         {
-          "number": "864",
+          "number": "UZB5",
           "kind": "normal",
-          "label": "Carta 864"
+          "label": "Umar Eshmurodov - Uzbekistan"
         },
         {
-          "number": "865",
+          "number": "UZB6",
           "kind": "normal",
-          "label": "Carta 865"
+          "label": "Husniddin Aliqulov - Uzbekistan"
         },
         {
-          "number": "866",
+          "number": "UZB7",
           "kind": "normal",
-          "label": "Carta 866"
+          "label": "Rustamjon Ashurmatov - Uzbekistan"
         },
         {
-          "number": "867",
+          "number": "UZB8",
           "kind": "normal",
-          "label": "Carta 867"
+          "label": "Khojiakbar Alijonov - Uzbekistan"
         },
         {
-          "number": "868",
+          "number": "UZB9",
           "kind": "normal",
-          "label": "Carta 868"
+          "label": "Abdukodir Khusanov - Uzbekistan"
         },
         {
-          "number": "869",
+          "number": "UZB10",
           "kind": "normal",
-          "label": "Carta 869"
+          "label": "Odiljon Hamrobekov - Uzbekistan"
         },
         {
-          "number": "870",
+          "number": "UZB11",
           "kind": "normal",
-          "label": "Carta 870"
+          "label": "Otabek Shukurov - Uzbekistan"
         },
         {
-          "number": "871",
+          "number": "UZB12",
           "kind": "normal",
-          "label": "Carta 871"
+          "label": "Jamshid Iskanderov - Uzbekistan"
         },
         {
-          "number": "872",
+          "number": "UZB13",
           "kind": "normal",
-          "label": "Carta 872"
+          "label": "Team Photo - Uzbekistan"
         },
         {
-          "number": "873",
+          "number": "UZB14",
           "kind": "normal",
-          "label": "Carta 873"
+          "label": "Azizbek Turgunboev - Uzbekistan"
         },
         {
-          "number": "874",
+          "number": "UZB15",
           "kind": "normal",
-          "label": "Carta 874"
+          "label": "Khojimat Erkinov - Uzbekistan"
         },
         {
-          "number": "875",
+          "number": "UZB16",
           "kind": "normal",
-          "label": "Carta 875"
+          "label": "Eldor Shomurodov - Uzbekistan"
         },
         {
-          "number": "876",
+          "number": "UZB17",
           "kind": "normal",
-          "label": "Carta 876"
+          "label": "Oston Urunov - Uzbekistan"
         },
         {
-          "number": "877",
+          "number": "UZB18",
           "kind": "normal",
-          "label": "Carta 877"
+          "label": "Jaloliddin Masharipov - Uzbekistan"
         },
         {
-          "number": "878",
+          "number": "UZB19",
           "kind": "normal",
-          "label": "Carta 878"
+          "label": "Igor Sergeev - Uzbekistan"
         },
         {
-          "number": "879",
-          "kind": "special",
-          "label": "Brilhante/Especial 879"
-        },
-        {
-          "number": "880",
-          "kind": "special",
-          "label": "Brilhante/Especial 880"
+          "number": "UZB20",
+          "kind": "normal",
+          "label": "Abbosbek Fayzullaev - Uzbekistan"
         }
       ]
     },
     {
-      "id": "country-45",
+      "id": "col",
       "order": 45,
-      "name": "País 45",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "COL",
+      "name": "Colombia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "881",
+          "number": "COL1",
+          "kind": "golden-special",
+          "label": "Team Logo - Colombia"
+        },
+        {
+          "number": "COL2",
           "kind": "normal",
-          "label": "Carta 881"
+          "label": "Camilo Vargas - Colombia"
         },
         {
-          "number": "882",
+          "number": "COL3",
           "kind": "normal",
-          "label": "Carta 882"
+          "label": "David Ospina - Colombia"
         },
         {
-          "number": "883",
+          "number": "COL4",
           "kind": "normal",
-          "label": "Carta 883"
+          "label": "Dávinson Sánchez - Colombia"
         },
         {
-          "number": "884",
+          "number": "COL5",
           "kind": "normal",
-          "label": "Carta 884"
+          "label": "Yerry Mina - Colombia"
         },
         {
-          "number": "885",
+          "number": "COL6",
           "kind": "normal",
-          "label": "Carta 885"
+          "label": "Daniel Munoz - Colombia"
         },
         {
-          "number": "886",
+          "number": "COL7",
           "kind": "normal",
-          "label": "Carta 886"
+          "label": "Johan Mojica - Colombia"
         },
         {
-          "number": "887",
+          "number": "COL8",
           "kind": "normal",
-          "label": "Carta 887"
+          "label": "Jhon Lucumí - Colombia"
         },
         {
-          "number": "888",
+          "number": "COL9",
           "kind": "normal",
-          "label": "Carta 888"
+          "label": "Santiago Arias - Colombia"
         },
         {
-          "number": "889",
+          "number": "COL10",
           "kind": "normal",
-          "label": "Carta 889"
+          "label": "Jefferson Lerma - Colombia"
         },
         {
-          "number": "890",
+          "number": "COL11",
           "kind": "normal",
-          "label": "Carta 890"
+          "label": "Kevin Castaño - Colombia"
         },
         {
-          "number": "891",
+          "number": "COL12",
           "kind": "normal",
-          "label": "Carta 891"
+          "label": "Richard Rios - Colombia"
         },
         {
-          "number": "892",
+          "number": "COL13",
           "kind": "normal",
-          "label": "Carta 892"
+          "label": "Team Photo - Colombia"
         },
         {
-          "number": "893",
+          "number": "COL14",
           "kind": "normal",
-          "label": "Carta 893"
+          "label": "James Rodriguez - Colombia"
         },
         {
-          "number": "894",
+          "number": "COL15",
           "kind": "normal",
-          "label": "Carta 894"
+          "label": "Juan Fernando Quintero - Colombia"
         },
         {
-          "number": "895",
+          "number": "COL16",
           "kind": "normal",
-          "label": "Carta 895"
+          "label": "Jorge Carrascal - Colombia"
         },
         {
-          "number": "896",
+          "number": "COL17",
           "kind": "normal",
-          "label": "Carta 896"
+          "label": "Jon Arias - Colombia"
         },
         {
-          "number": "897",
+          "number": "COL18",
           "kind": "normal",
-          "label": "Carta 897"
+          "label": "Jhon Cordova - Colombia"
         },
         {
-          "number": "898",
+          "number": "COL19",
           "kind": "normal",
-          "label": "Carta 898"
+          "label": "Luis Suarez - Colombia"
         },
         {
-          "number": "899",
-          "kind": "special",
-          "label": "Brilhante/Especial 899"
-        },
-        {
-          "number": "900",
-          "kind": "special",
-          "label": "Brilhante/Especial 900"
+          "number": "COL20",
+          "kind": "normal",
+          "label": "Luis Diaz - Colombia"
         }
       ]
     },
     {
-      "id": "country-46",
+      "id": "eng",
       "order": 46,
-      "name": "País 46",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "ENG",
+      "name": "England",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "901",
+          "number": "ENG1",
+          "kind": "golden-special",
+          "label": "Team Logo - England"
+        },
+        {
+          "number": "ENG2",
           "kind": "normal",
-          "label": "Carta 901"
+          "label": "Jordan Pickford - England"
         },
         {
-          "number": "902",
+          "number": "ENG3",
           "kind": "normal",
-          "label": "Carta 902"
+          "label": "John Stones - England"
         },
         {
-          "number": "903",
+          "number": "ENG4",
           "kind": "normal",
-          "label": "Carta 903"
+          "label": "Marc Guéhi - England"
         },
         {
-          "number": "904",
+          "number": "ENG5",
           "kind": "normal",
-          "label": "Carta 904"
+          "label": "Ezri Konsa - England"
         },
         {
-          "number": "905",
+          "number": "ENG6",
           "kind": "normal",
-          "label": "Carta 905"
+          "label": "Trent Alexander-Arnold - England"
         },
         {
-          "number": "906",
+          "number": "ENG7",
           "kind": "normal",
-          "label": "Carta 906"
+          "label": "Reece James - England"
         },
         {
-          "number": "907",
+          "number": "ENG8",
           "kind": "normal",
-          "label": "Carta 907"
+          "label": "Dan Burn - England"
         },
         {
-          "number": "908",
+          "number": "ENG9",
           "kind": "normal",
-          "label": "Carta 908"
+          "label": "Jordan Henderson - England"
         },
         {
-          "number": "909",
+          "number": "ENG10",
           "kind": "normal",
-          "label": "Carta 909"
+          "label": "Declan Rice - England"
         },
         {
-          "number": "910",
+          "number": "ENG11",
           "kind": "normal",
-          "label": "Carta 910"
+          "label": "Jude Bellingham - England"
         },
         {
-          "number": "911",
+          "number": "ENG12",
           "kind": "normal",
-          "label": "Carta 911"
+          "label": "Cole Palmer - England"
         },
         {
-          "number": "912",
+          "number": "ENG13",
           "kind": "normal",
-          "label": "Carta 912"
+          "label": "Team Photo - England"
         },
         {
-          "number": "913",
+          "number": "ENG14",
           "kind": "normal",
-          "label": "Carta 913"
+          "label": "Morgan Rogers - England"
         },
         {
-          "number": "914",
+          "number": "ENG15",
           "kind": "normal",
-          "label": "Carta 914"
+          "label": "Anthony Gordon - England"
         },
         {
-          "number": "915",
+          "number": "ENG16",
           "kind": "normal",
-          "label": "Carta 915"
+          "label": "Phil Foden - England"
         },
         {
-          "number": "916",
+          "number": "ENG17",
           "kind": "normal",
-          "label": "Carta 916"
+          "label": "Bukayo Saka - England"
         },
         {
-          "number": "917",
+          "number": "ENG18",
           "kind": "normal",
-          "label": "Carta 917"
+          "label": "Harry Kane - England"
         },
         {
-          "number": "918",
+          "number": "ENG19",
           "kind": "normal",
-          "label": "Carta 918"
+          "label": "Marcus Rashford - England"
         },
         {
-          "number": "919",
-          "kind": "special",
-          "label": "Brilhante/Especial 919"
-        },
-        {
-          "number": "920",
-          "kind": "special",
-          "label": "Brilhante/Especial 920"
+          "number": "ENG20",
+          "kind": "normal",
+          "label": "Ollie Watkins - England"
         }
       ]
     },
     {
-      "id": "country-47",
+      "id": "cro",
       "order": 47,
-      "name": "País 47",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "CRO",
+      "name": "Croatia",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "921",
+          "number": "CRO1",
+          "kind": "golden-special",
+          "label": "Team Logo - Croatia"
+        },
+        {
+          "number": "CRO2",
           "kind": "normal",
-          "label": "Carta 921"
+          "label": "Dominik Livaković - Croatia"
         },
         {
-          "number": "922",
+          "number": "CRO3",
           "kind": "normal",
-          "label": "Carta 922"
+          "label": "Duje Caleta-Car - Croatia"
         },
         {
-          "number": "923",
+          "number": "CRO4",
           "kind": "normal",
-          "label": "Carta 923"
+          "label": "Josko Gvardiol - Croatia"
         },
         {
-          "number": "924",
+          "number": "CRO5",
           "kind": "normal",
-          "label": "Carta 924"
+          "label": "Josip Stanišić - Croatia"
         },
         {
-          "number": "925",
+          "number": "CRO6",
           "kind": "normal",
-          "label": "Carta 925"
+          "label": "Luka Vušković - Croatia"
         },
         {
-          "number": "926",
+          "number": "CRO7",
           "kind": "normal",
-          "label": "Carta 926"
+          "label": "Josip Sutalo - Croatia"
         },
         {
-          "number": "927",
+          "number": "CRO8",
           "kind": "normal",
-          "label": "Carta 927"
+          "label": "Kristijan Jakic - Croatia"
         },
         {
-          "number": "928",
+          "number": "CRO9",
           "kind": "normal",
-          "label": "Carta 928"
+          "label": "Luka Modrić - Croatia"
         },
         {
-          "number": "929",
+          "number": "CRO10",
           "kind": "normal",
-          "label": "Carta 929"
+          "label": "Mateo Kovacic - Croatia"
         },
         {
-          "number": "930",
+          "number": "CRO11",
           "kind": "normal",
-          "label": "Carta 930"
+          "label": "Martin Baturina - Croatia"
         },
         {
-          "number": "931",
+          "number": "CRO12",
           "kind": "normal",
-          "label": "Carta 931"
+          "label": "Lovro Majer - Croatia"
         },
         {
-          "number": "932",
+          "number": "CRO13",
           "kind": "normal",
-          "label": "Carta 932"
+          "label": "Team Photo - Croatia"
         },
         {
-          "number": "933",
+          "number": "CRO14",
           "kind": "normal",
-          "label": "Carta 933"
+          "label": "Mario Pasalic - Croatia"
         },
         {
-          "number": "934",
+          "number": "CRO15",
           "kind": "normal",
-          "label": "Carta 934"
+          "label": "Petar Sucic - Croatia"
         },
         {
-          "number": "935",
+          "number": "CRO16",
           "kind": "normal",
-          "label": "Carta 935"
+          "label": "Ivan Perišić - Croatia"
         },
         {
-          "number": "936",
+          "number": "CRO17",
           "kind": "normal",
-          "label": "Carta 936"
+          "label": "Marco Pasalic - Croatia"
         },
         {
-          "number": "937",
+          "number": "CRO18",
           "kind": "normal",
-          "label": "Carta 937"
+          "label": "Ante Budimir - Croatia"
         },
         {
-          "number": "938",
+          "number": "CRO19",
           "kind": "normal",
-          "label": "Carta 938"
+          "label": "Andrej Kramarić - Croatia"
         },
         {
-          "number": "939",
-          "kind": "special",
-          "label": "Brilhante/Especial 939"
-        },
-        {
-          "number": "940",
-          "kind": "special",
-          "label": "Brilhante/Especial 940"
+          "number": "CRO20",
+          "kind": "normal",
+          "label": "Franjo Ivanovic - Croatia"
         }
       ]
     },
     {
-      "id": "country-48",
+      "id": "gha",
       "order": 48,
-      "name": "País 48",
-      "officialNameKnown": false,
-      "notes": "Substituir pelo país e posição oficiais da caderneta física Panini FIFA World Cup 2026 quando disponíveis.",
+      "code": "GHA",
+      "name": "Ghana",
+      "officialNameKnown": true,
       "cards": [
         {
-          "number": "941",
+          "number": "GHA1",
+          "kind": "golden-special",
+          "label": "Team Logo - Ghana"
+        },
+        {
+          "number": "GHA2",
           "kind": "normal",
-          "label": "Carta 941"
+          "label": "Lawrence Ati Zigi - Ghana"
         },
         {
-          "number": "942",
+          "number": "GHA3",
           "kind": "normal",
-          "label": "Carta 942"
+          "label": "Tariq Lamptey - Ghana"
         },
         {
-          "number": "943",
+          "number": "GHA4",
           "kind": "normal",
-          "label": "Carta 943"
+          "label": "Mohammed Salisu - Ghana"
         },
         {
-          "number": "944",
+          "number": "GHA5",
           "kind": "normal",
-          "label": "Carta 944"
+          "label": "Alidu Seidu - Ghana"
         },
         {
-          "number": "945",
+          "number": "GHA6",
           "kind": "normal",
-          "label": "Carta 945"
+          "label": "Alexander Djiku - Ghana"
         },
         {
-          "number": "946",
+          "number": "GHA7",
           "kind": "normal",
-          "label": "Carta 946"
+          "label": "Gideon Mensah - Ghana"
         },
         {
-          "number": "947",
+          "number": "GHA8",
           "kind": "normal",
-          "label": "Carta 947"
+          "label": "Caleb Yirenkyi - Ghana"
         },
         {
-          "number": "948",
+          "number": "GHA9",
           "kind": "normal",
-          "label": "Carta 948"
+          "label": "Abdul Issahaku Fatawu - Ghana"
         },
         {
-          "number": "949",
+          "number": "GHA10",
           "kind": "normal",
-          "label": "Carta 949"
+          "label": "Thomas Partey - Ghana"
         },
         {
-          "number": "950",
+          "number": "GHA11",
           "kind": "normal",
-          "label": "Carta 950"
+          "label": "Salis Abdul Samed - Ghana"
         },
         {
-          "number": "951",
+          "number": "GHA12",
           "kind": "normal",
-          "label": "Carta 951"
+          "label": "Kamaldeen Sulemana - Ghana"
         },
         {
-          "number": "952",
+          "number": "GHA13",
           "kind": "normal",
-          "label": "Carta 952"
+          "label": "Team Photo - Ghana"
         },
         {
-          "number": "953",
+          "number": "GHA14",
           "kind": "normal",
-          "label": "Carta 953"
+          "label": "Mohammed Kudus - Ghana"
         },
         {
-          "number": "954",
+          "number": "GHA15",
           "kind": "normal",
-          "label": "Carta 954"
+          "label": "Inaki Williams - Ghana"
         },
         {
-          "number": "955",
+          "number": "GHA16",
           "kind": "normal",
-          "label": "Carta 955"
+          "label": "Jordan Ayew - Ghana"
         },
         {
-          "number": "956",
+          "number": "GHA17",
           "kind": "normal",
-          "label": "Carta 956"
+          "label": "Andrew Ayew - Ghana"
         },
         {
-          "number": "957",
+          "number": "GHA18",
           "kind": "normal",
-          "label": "Carta 957"
+          "label": "Joseph Paintsil - Ghana"
         },
         {
-          "number": "958",
+          "number": "GHA19",
           "kind": "normal",
-          "label": "Carta 958"
+          "label": "Osman Bukari - Ghana"
         },
         {
-          "number": "959",
-          "kind": "special",
-          "label": "Brilhante/Especial 959"
+          "number": "GHA20",
+          "kind": "normal",
+          "label": "Antoine Semenyo - Ghana"
+        }
+      ]
+    },
+    {
+      "id": "pan",
+      "order": 49,
+      "code": "PAN",
+      "name": "Panama",
+      "officialNameKnown": true,
+      "cards": [
+        {
+          "number": "PAN1",
+          "kind": "golden-special",
+          "label": "Team Logo - Panama"
         },
         {
-          "number": "960",
-          "kind": "special",
-          "label": "Brilhante/Especial 960"
+          "number": "PAN2",
+          "kind": "normal",
+          "label": "Orlando Mosquera - Panama"
+        },
+        {
+          "number": "PAN3",
+          "kind": "normal",
+          "label": "Luis Mejia - Panama"
+        },
+        {
+          "number": "PAN4",
+          "kind": "normal",
+          "label": "Fidel Escobar - Panama"
+        },
+        {
+          "number": "PAN5",
+          "kind": "normal",
+          "label": "Andres Andrade - Panama"
+        },
+        {
+          "number": "PAN6",
+          "kind": "normal",
+          "label": "Michael Amir Murillo - Panama"
+        },
+        {
+          "number": "PAN7",
+          "kind": "normal",
+          "label": "Eric Davis - Panama"
+        },
+        {
+          "number": "PAN8",
+          "kind": "normal",
+          "label": "Jose Cordoba - Panama"
+        },
+        {
+          "number": "PAN9",
+          "kind": "normal",
+          "label": "Cesar Blackman - Panama"
+        },
+        {
+          "number": "PAN10",
+          "kind": "normal",
+          "label": "Cristian Martinez - Panama"
+        },
+        {
+          "number": "PAN11",
+          "kind": "normal",
+          "label": "Aníbal Godoy - Panama"
+        },
+        {
+          "number": "PAN12",
+          "kind": "normal",
+          "label": "Adalberto Carrasquilla - Panama"
+        },
+        {
+          "number": "PAN13",
+          "kind": "normal",
+          "label": "Team Photo - Panama"
+        },
+        {
+          "number": "PAN14",
+          "kind": "normal",
+          "label": "Édgar Bárcenas - Panama"
+        },
+        {
+          "number": "PAN15",
+          "kind": "normal",
+          "label": "Carlos Harvey - Panama"
+        },
+        {
+          "number": "PAN16",
+          "kind": "normal",
+          "label": "Ismael Díaz - Panama"
+        },
+        {
+          "number": "PAN17",
+          "kind": "normal",
+          "label": "Jose Fajardo - Panama"
+        },
+        {
+          "number": "PAN18",
+          "kind": "normal",
+          "label": "Cecilio Waterman - Panama"
+        },
+        {
+          "number": "PAN19",
+          "kind": "normal",
+          "label": "Jose Luiz Rodriguez - Panama"
+        },
+        {
+          "number": "PAN20",
+          "kind": "normal",
+          "label": "Alberto Quintero - Panama"
         }
       ]
     }
@@ -5245,67 +5366,67 @@ export const albumStructure = {
   "cocaCola": {
     "id": "coca-cola-panini-2026",
     "name": "Coca-Cola x Panini",
-    "description": "Secção especial anunciada com 12 stickers especiais na página dedicada do álbum oficial.",
+    "description": "Secção promocional USA Version: 12 stickers especiais não incluídos nos pacotes standard.",
     "cards": [
       {
         "number": "C1",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C1"
+        "label": "Lamine Yamal - Spain"
       },
       {
         "number": "C2",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C2"
+        "label": "Joshua Kimmich - Germany"
       },
       {
         "number": "C3",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C3"
+        "label": "Harry Kane - England"
       },
       {
         "number": "C4",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C4"
+        "label": "Santiago Giménez - Mexico"
       },
       {
         "number": "C5",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C5"
+        "label": "Antonee Robinson - USA"
       },
       {
         "number": "C6",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C6"
+        "label": "Jefferson Lerma - Colombia"
       },
       {
         "number": "C7",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C7"
+        "label": "Edson Álvarez - Mexico"
       },
       {
         "number": "C8",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C8"
+        "label": "Virgil van Dijk - Netherlands"
       },
       {
         "number": "C9",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C9"
+        "label": "Alphonso Davies - Canada"
       },
       {
         "number": "C10",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C10"
+        "label": "Weston McKennie - USA"
       },
       {
         "number": "C11",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C11"
+        "label": "Lautaro Martínez - Argentina"
       },
       {
         "number": "C12",
         "kind": "coca-cola-special",
-        "label": "Coca-Cola x Panini C12"
+        "label": "Gabriel Magalhães - Brazil"
       }
     ]
   }
