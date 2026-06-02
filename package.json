@@ -1,0 +1,25 @@
+{
+  "name": "panini-world-cup-2026",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "App mobile-first para gerir a caderneta Panini FIFA World Cup 2026.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "start": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test"
+  },
+  "keywords": [
+    "panini",
+    "world-cup-2026",
+    "stickers",
+    "pwa"
+  ],
+  "author": "Kevin Lucas / Hermes",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "latest"
+  }
+}
