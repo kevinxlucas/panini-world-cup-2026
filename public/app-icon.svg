@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Panini World Cup football icon">
+  <defs>
+    <linearGradient id="bg" x1="24" y1="18" x2="158" y2="166" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#147cff"/>
+      <stop offset="0.55" stop-color="#6f5cff"/>
+      <stop offset="1" stop-color="#20c970"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="58" cy="42" r="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#10254a" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="180" height="180" rx="42" fill="url(#bg)"/>
+  <rect width="180" height="180" rx="42" fill="url(#shine)"/>
+  <circle cx="90" cy="91" r="57" fill="#ffffff" filter="url(#shadow)"/>
+  <path d="M90 52 112 68 104 94H76L68 68Z" fill="#172033"/>
+  <path d="M46 85 63 72 76 94 64 115 43 108Z" fill="#172033"/>
+  <path d="M134 85 117 72 104 94 116 115 137 108Z" fill="#172033"/>
+  <path d="M73 139 64 115 82 104 98 104 116 115 107 139Z" fill="#172033"/>
+  <path d="M90 52V34M68 68 54 53M112 68 126 53M76 94 64 115M104 94 116 115M82 104 73 139M98 104 107 139" fill="none" stroke="#172033" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"/>
+  <circle cx="90" cy="91" r="56" fill="none" stroke="#eaf1ff" stroke-width="5"/>
+</svg>

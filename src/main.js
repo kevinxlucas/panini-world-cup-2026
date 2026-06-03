@@ -17,6 +17,7 @@ const app = document.querySelector('#app');
 
 let collection = loadCollection(albumStructure);
 let view = 'home';
+let countrySearch = '';
 let selectedSectionId = applySectionOverrides(albumStructure, collection)[0]?.id;
 let toastTimer;
 
@@ -93,6 +94,8 @@ function renderHeader() {
 
 function renderHome(sections) {
   const stats = getStats(albumStructure, collection);
+  const visibleSections = filterSections(sections, countrySearch);
+  const searchSummary = countrySearch ? `${visibleSections.length}/${sections.length} secções` : `${sections.length} secções`;
   return `
     <div class="section-title">
       <div>
@@ -105,8 +108,18 @@ function renderHome(sections) {
       <strong>Checklist oficial carregada e ainda editável.</strong>
       <span>A app usa a secção <code>FWC</code> antes das seleções e os 48 nomes/grafias da checklist Panini 2026. As douradas aparecem no início de cada conjunto; podes exportar o backup JSON.</span>
     </article>
+    <section class="search-card" aria-label="Pesquisa de países">
+      <label for="country-search">
+        <span>Procurar país</span>
+        <small>${searchSummary}</small>
+      </label>
+      <div class="search-field">
+        <span aria-hidden="true">⌕</span>
+        <input id="country-search" type="search" placeholder="Ex.: Portugal, Brazil, FWC" value="${escapeHtml(countrySearch)}" autocomplete="off" data-action="search-country">
+      </div>
+    </section>
     <section class="country-list">
-      ${sections.map(renderCountryCard).join('')}
+      ${visibleSections.length ? visibleSections.map(renderCountryCard).join('') : '<p class="empty search-empty">Nenhum país encontrado.</p>'}
     </section>
     <section class="editor hidden" data-editor>
       <div class="section-title compact">
@@ -135,11 +148,26 @@ function renderHome(sections) {
   `;
 }
 
+function filterSections(sections, query) {
+  const normalizedQuery = normalizeSearch(query);
+  if (!normalizedQuery) return sections;
+  return sections.filter((section) => normalizeSearch(`${section.order} ${section.id} ${section.name}`).includes(normalizedQuery));
+}
+
+function normalizeSearch(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
 function renderCountryCard(section) {
   const progress = getSectionProgress(section, collection);
   const gradient = `conic-gradient(var(--accent) ${progress.percent}%, var(--track) 0)`;
+  const searchValue = normalizeSearch(`${section.order} ${section.name}`);
   return `
-    <button class="country-card" data-action="open-country" data-section-id="${section.id}">
+    <button class="country-card" data-action="open-country" data-section-id="${section.id}" data-country-card data-country-search="${escapeHtml(searchValue)}">
       <span class="order">${String(section.order).padStart(2, '0')}</span>
       <span class="country-info">
         <strong>${escapeHtml(section.name)}</strong>
@@ -275,6 +303,13 @@ function renderBottomNav() {
 
 function bindEvents(sections) {
   app.querySelectorAll('[data-action="nav"]').forEach((button) => button.addEventListener('click', () => setView(button.dataset.view)));
+  app.querySelectorAll('[data-action="search-country"]').forEach((input) => input.addEventListener('input', () => {
+    countrySearch = input.value;
+    render();
+    const nextInput = app.querySelector('[data-action="search-country"]');
+    nextInput?.focus();
+    nextInput?.setSelectionRange(countrySearch.length, countrySearch.length);
+  }));
   app.querySelectorAll('[data-action="open-country"]').forEach((button) => button.addEventListener('click', () => setView('country', button.dataset.sectionId)));
   app.querySelectorAll('[data-action="toggle-card"]').forEach((button) => {
     button.addEventListener('click', () => {

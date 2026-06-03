@@ -53,6 +53,15 @@ h3 { font-size: 1.05rem; }
 .notice { display: grid; gap: 6px; color: var(--muted); line-height: 1.35; margin-bottom: 14px; }
 .notice strong { color: var(--ink); }
 
+.search-card { margin-bottom: 12px; display: grid; gap: 10px; padding: 14px; border-radius: 22px; background: rgba(255,255,255,.9); border: 1px solid var(--line); box-shadow: 0 10px 26px rgba(41, 64, 111, 0.08); }
+.search-card label { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--ink); font-weight: 900; }
+.search-card label small { color: var(--muted); font-weight: 850; }
+.search-field { min-height: 48px; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 8px; padding: 0 12px; border-radius: 17px; background: rgba(20,124,255,.08); border: 1px solid rgba(20,124,255,.12); }
+.search-field span { color: var(--accent); font-size: 1.15rem; font-weight: 900; }
+.search-field input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); }
+.search-field input::placeholder { color: var(--muted); }
+.search-empty { padding: 16px; text-align: center; }
+
 .country-list { display: grid; gap: 10px; }
 .country-card, .stat-row { width: 100%; border: 0; background: rgba(255,255,255,.88); border-radius: 24px; display: flex; align-items: center; gap: 12px; padding: 13px; color: var(--ink); box-shadow: 0 10px 26px rgba(41, 64, 111, 0.08); border: 1px solid rgba(255,255,255,.86); transition: transform .18s ease, box-shadow .18s ease; text-align: left; }
 .country-card:active, .stat-row:active, .sticker:active, .bottom-nav button:active { transform: scale(.97); }
